@@ -1,5 +1,5 @@
 #!/bin/ksh
-# ksh initialisation
+# ~/.kshrc : ksh initialisation
 
 # vi mode baby
 set -o vi

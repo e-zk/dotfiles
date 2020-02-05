@@ -1,4 +1,5 @@
 #!/bin/sh
+# ~/.xsession : loaded on login from xenodm(1)
 
 # merge .Xdefaults
 test -f $HOME/.Xdefaults && xrdb -merge $HOME/.Xdefaults

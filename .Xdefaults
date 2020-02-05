@@ -1,3 +1,5 @@
+! ~/.Xdefaults : Xresources file
+
 ! xterm
 XTerm*locale:              utf8
 XTerm*loginShell:          true
