@@ -1,0 +1,64 @@
+# cwmrc
+
+# fonts
+fontname "Monoid:size=9"
+
+# colors
+color menubg "#ffffff"
+color font "#000000"
+color menufg "#efefef"
+color selfont "#000000"
+#color activeborder "#2a2f2e"
+color activeborder "#ffffff"
+#color inactiveborder "#191a1a"
+color inactiveborder "#d9dada"
+
+# gaps
+gap 100 100 100 100 100
+
+# snapping
+snapdist 6
+
+# application menu
+command term "xterm -g 67x20"
+command lock "xlock -mode blank +description"
+command top "xterm -g 80x24 -e top"
+command "firefox" "firefox-esr --no-remote --new-instance"
+command "firefox (uni)" "firefox-esr --new-instance -P Uni"
+command "firefox (dev)" "firefox-esr --new-instance -P development"
+command "firefox (temporary)" "tmpfox" 
+command "gcolor" gcolor2
+command "gimp" gimp
+command "qbittorrent" qbittorrent
+command "zathura" zathura
+
+# border
+borderwidth 4
+
+# auto groups
+autogroup 1 "xterm", "XTerm"
+autogroup 2 "Navigator", "Firefox"
+autogroup 3 "zathura", "Zathura"
+autogroup 4 "Xephyr", "Xephyr"
+autogroup 5 "nowplaying", "mpv"
+
+# keys 
+bind-key 4-a group-toggle-1
+bind-key 4-s group-toggle-2
+bind-key 4-d group-toggle-3
+bind-key 4-f group-toggle-4
+bind-key 4-q group-toggle-5
+
+bind-key 4-l lock
+bind-key 4-g "center.sh md"
+bind-key 4-r "center.sh tl"
+bind-key 4-t "center.sh tr"
+bind-key 4-v "center.sh bl"
+bind-key 4-b "center.sh br"
+
+bind-key XF86AudioLowerVolume "soundbar"
+bind-key XF86AudioRaiseVolume "soundbar"
+bind-key XF86AudioMute "soundbar" 
+
+# wm
+wm fvwm2 /usr/X11R6/bin/fvwm
