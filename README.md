@@ -4,6 +4,7 @@
 * xterm
 * vim
 * lemonbar
+* cwm
 
 ---
 
