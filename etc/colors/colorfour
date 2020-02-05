@@ -1,0 +1,52 @@
+! $OpenBSD: dot.Xdefaults,v 1.3 2014/07/10 10:22:59 jasper Exp $
+XTerm*locale:utf8
+XTerm*loginShell:true
+XTerm*font: -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-1
+XTerm*faceName: Dina
+XTerm*faceSize: 10
+
+XTerm*internalBorder: 16
+XTerm*scrollBar: 0
+XTerm*cursorUnderLine: true
+
+XTerm*disallowedWindowOps: 20,21,SetXprop
+
+!sxiv.background: #601030
+!sxiv.foreground: #ffffff
+
+! special
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
+
+! black
+*.color0:       #050504
+*.color8:       #0e100b
+
+! red
+*.color1:       #c2445c
+*.color9:       #c2445c
+
+! green
+*.color2:       #965782
+*.color10:      #965782
+
+! yellow
+*.color3:       #9f3563
+*.color11:      #9f3563
+
+! blue
+*.color4:       #4f647e
+*.color12:      #5f7f8e
+
+! magenta
+*.color5:       #574165
+*.color13:      #656382
+
+! cyan
+*.color6:       #b26a9a
+*.color14:      #983b74
+
+! white
+*.color7:       #eeeeee
+*.color15:      #a5a5a5

@@ -1,0 +1,93 @@
+! $OpenBSD: dot.Xdefaults,v 1.3 2014/07/10 10:22:59 jasper Exp $
+XTerm*locale:utf8
+XTerm*loginShell:true
+XTerm*font: -*-fixed-medium-r-*-*-16-*-*-*-*-*-*-1
+XTerm*internalBorder: 8
+XTerm*background: #000000
+XTerm*foreground: #ffffff
+XTerm*scrollBar: 0
+
+
+!st.shell: /bin/ksh
+!st.font: Inconsolata:pixelsize=17:antialias=true:autohint=true;
+st.font: fixed:pixelsize=16:antialias=true:autohint=true;
+
+st.cursorshape: 1
+st.cursorblinkstyle: 0
+st.cursorblinkontype: 1
+
+! special
+! st.foreground:   #ffffff
+! st.background:   #000000
+! st.cursorColor:  #ffffff
+!
+! ! black
+! st.color0:       #010101
+! st.color8:       #101010
+!
+! ! red
+! st.color1:       #af304a
+! st.color9:       #af304a
+!
+! ! green
+! st.color2:       #0a4f4a
+! st.color10:      #0a4f4a
+!
+! ! yellow
+! st.color3:       #2a394f
+! st.color11:      #2a394f
+!
+! ! blue
+! st.color4:       #203f6a
+! st.color12:      #203f6a
+!
+! ! magenta
+! st.color5:       #5a304f
+! st.color13:      #5a304f
+!
+! ! cyan
+! st.color6:       #0a4a59
+! st.color14:      #0a4a59
+!
+! ! white
+! st.color7:       #efefef
+! st.color15:      #efefef
+!
+
+! special
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #601030
+
+! black
+*.color0:       #010101
+*.color8:       #101010
+
+! red
+*.color1:       #601020
+*.color9:       #af304a
+
+! green
+*.color2:       #0a4f4a
+*.color10:      #0a4f4a
+
+! yellow
+*.color3:       #2a394f
+*.color11:      #2a394f
+
+! blue
+*.color4:       #203f6a
+*.color12:      #203f6a
+
+! magenta
+*.color5:       #5a304f
+*.color13:      #5a304f
+
+! cyan
+*.color6:       #0a4a59
+*.color14:      #0a4a59
+
+! white
+*.color7:       #efefef
+*.color15:      #efefef
+

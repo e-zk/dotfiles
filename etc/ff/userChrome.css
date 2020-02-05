@@ -1,0 +1,102 @@
+/* TST rules */
+/* https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules */
+#sidebar-header {
+  display: none;
+}
+statuspanel {
+  display: none !important;
+}
+#sidebar {
+  max-width: none!important;
+  min-width: 0!important;
+}
+
+#sidebar-box+#sidebar-splitter {
+  display: none!important;
+}
+
+:root {
+  --thin-tab-width: 30px;
+  --wide-tab-width: 200px;
+}
+
+#sidebar-box {
+  overflow: hidden!important;
+  position: relative!important;
+  transition: all 200ms!important;
+  min-width: var(--thin-tab-width)!important;
+  max-width: var(--thin-tab-width)!important;
+}
+
+#sidebar-box #sidebar,#sidebar-box:hover {
+  transition: all 100ms!important;
+  min-width: var(--wide-tab-width)!important;
+  max-width: var(--wide-tab-width)!important;
+}
+
+/* For right sidebar change 'margin-right' to 'margin-left' */
+#sidebar-box:hover {
+  margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width))*-1)!important;
+}
+
+#navigator-toolbox {
+	/*font-family: "Inconsolata", Monoid, monospace !important;*/
+	font-family: "Go Mono", monospace !important;
+	background-color: #fff !important;
+	border: 0 !important;
+	box-shadow: 0px 0px 4px rgba(0,0,0,.128);
+}
+#nav-bar:not([tabs-hidden="true"]) {
+	box-shadow: none !important;
+}
+
+.titlebar-spacer[type="pre-tabs"] {
+	border-inline-end: 1px solid transparent !important;
+	opacity: 0;
+}
+#tabbrowser-tabs {
+	border-color: transparent !important;
+	visibility: collapse !important;
+}
+
+#TabsToolbar {
+/*	display: none !important;*/
+}
+
+.tabbrowser-tab {
+	background-color: #fff !important;
+	border-radius: 4px !important;
+	border-color: transparent;
+}
+.tabbrowser-tab[visuallyselected]::after {
+	border-color: transparent !important;
+}
+.tabbrowser-tab:not([pinned]) {
+	
+}
+/* disable blue line ? */
+.tabbrowser-tab .tab-loading-burst {
+	display: none !important;
+}
+
+.tab-background {
+	background-color: #f5f5f5 !important;
+}
+.tab-background[selected="true"] {
+	background-color: #fff !important;
+}
+
+
+
+.browser-toolbar:not(.titlebar-color) {
+	background-image: none !important;
+	background-color: transparent !important;
+}
+
+#urlbar:not(.hidden-focus)[focused="true"], .searchbar-textbox[focused="true"] {
+	border-color: transparent !important;
+	box-shadow: 0 0 0 transparent !important;
+}
+#urlbar:not(.hidden-focus), .searchbar-textbox {
+	border-color: transparent !important;
+}

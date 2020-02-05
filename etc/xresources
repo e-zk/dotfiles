@@ -1,0 +1,19 @@
+! xlock
+XLock.dpmsoff:	1
+XLock.description:  on
+XLock.echokeys:	    on
+XLock.showfps:	    off
+XLock.foreground:   #FFFFFF
+XLock.background:   #000000
+XLock.info:	    [ UNAUTHORISED ACCESS IS PROHIBITED ]
+XLock.username:	    User:   
+XLock.password:     Passwd:
+XLock.icongeometry: 96x96
+XLock.font:         -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
+XLock.planfont:     -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
+XLock.messagefont:  -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
+
+! sxiv
+Sxiv*background: #101a1f
+Sxiv*foreground: #ffffff
+Sxiv*font:       Dina:size=11

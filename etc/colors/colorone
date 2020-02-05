@@ -1,0 +1,49 @@
+! $OpenBSD: dot.Xdefaults,v 1.3 2014/07/10 10:22:59 jasper Exp $
+XTerm*locale:utf8
+XTerm*loginShell:true
+XTerm*font: -*-fixed-medium-r-*-*-16-*-*-*-*-*-*-1
+XTerm*internalBorder: 12
+XTerm*background: #000000
+XTerm*foreground: #ffffff
+XTerm*scrollBar: 0
+
+sxiv.background: #601030
+sxiv.foreground: #ffffff
+
+! special
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #601030
+
+! black
+*.color0:       #010101
+*.color8:       #101010
+
+! red
+*.color1:       #601020
+*.color9:       #601030
+
+! green
+*.color2:       #762646
+*.color10:      #6d1d2d
+
+! yellow
+*.color3:       #561724
+*.color11:      #530e29
+
+! blue
+*.color4:       #851844
+*.color12:      #84162c
+
+! magenta
+*.color5:       #95293f
+*.color13:      #91214e
+
+! cyan
+*.color6:       #ae1d57
+*.color14:      #ae1d57
+
+! white
+*.color7:       #efefef
+*.color15:      #efefef
+
