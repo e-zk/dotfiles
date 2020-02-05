@@ -4,6 +4,7 @@ configuration files
 	./bar.conf			# bar configuration
 	./colors/			# various XTerm colorschemes
 	./colorscheme -> ./colors/*	# current colorscheme
+	./compton.conf			# compton config
 	./ff/				# firefox css
 	./wallpaper.jpg			# current wallpaper
 	./xresources			# included in ~/.Xdefaults
