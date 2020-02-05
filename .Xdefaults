@@ -1,0 +1,21 @@
+! xterm
+XTerm*locale:              utf8
+XTerm*loginShell:          true
+XTerm*font:                -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-1
+XTerm*renderFont:          true
+XTerm*faceName:            Dina
+XTerm*faceSize:            11
+XTerm*faceNameBold:        0
+XTerm*internalBorder:      16
+XTerm*scrollBar:           0
+XTerm*cursorUnderLine:     false
+XTerm*disallowedWindowOps: 20,21,SetXprop
+
+! xft
+Xft.antialias: 1
+Xft.autohint:  1
+Xft.hintstyle: hintfull
+
+! include xresources, and colors
+#include "etc/xresources"
+#include "etc/colorscheme"
