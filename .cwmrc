@@ -1,7 +1,8 @@
 # cwmrc
 
 # fonts
-fontname "Monoid:size=9"
+#fontname "Monoid:size=9"
+fontname "Inconsolata:size=12"
 
 # colors
 color menubg "#ffffff"
@@ -14,7 +15,7 @@ color activeborder "#ffffff"
 color inactiveborder "#d9dada"
 
 # gaps
-gap 100 100 100 100 100
+gap 60 60 60 60
 
 # snapping
 snapdist 6
