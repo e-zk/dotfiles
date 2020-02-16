@@ -1,5 +1,7 @@
-# ~/etc
-configuration files
+~/etc
+=====
+various configuration files
+
 
 	./bar.conf			# bar configuration
 	./colors/			# various XTerm colorschemes
