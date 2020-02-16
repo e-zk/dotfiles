@@ -9,13 +9,11 @@ color menubg "#ffffff"
 color font "#000000"
 color menufg "#efefef"
 color selfont "#000000"
-#color activeborder "#2a2f2e"
 color activeborder "#ffffff"
-#color inactiveborder "#191a1a"
 color inactiveborder "#d9dada"
 
 # gaps
-gap 60 60 60 60
+gap 68 60 60 60
 
 # snapping
 snapdist 6
