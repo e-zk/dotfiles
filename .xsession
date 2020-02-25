@@ -8,20 +8,21 @@ test -f $HOME/.Xdefaults && xrdb -merge $HOME/.Xdefaults
 export LANG=en_AU.UTF-8
 export PATH=$PATH:$HOME/bin
 
-# wallpaper
-#xsetroot -def &
-test -f $HOME/etc/wallpaper.jpg \
-	&& xwallpaper --zoom $HOME/etc/wallpaper.jpg \
-	|| xsetroot -solid \#101f1f &
+# compton
+picom --config $HOME/etc/compton.conf &
 
-# bar
-status | bar &
+# wallpaper
+hsetroot \#A0AAAF &
+solidwall \#A0AAAF &
+
+# bars
+stacks date  &
+stacks clock &
+stacks bat   & 
+stacks wttr  &
 
 # reset notifications
 printf "" > $HOME/tmp/notif &
-
-# compton (eww)
-compton --config $HOME/etc/compton.conf &
 
 # cursor
 xsetroot -cursor_name X_cursor &
