@@ -7,19 +7,21 @@ fontname "Inconsolata:size=12"
 # colors
 color menubg "#ffffff"
 color font "#000000"
-color menufg "#efefef"
+color menufg "#d9dada"
 color selfont "#000000"
-color activeborder "#ffffff"
-color inactiveborder "#d9dada"
+#color activeborder "#ffffff"
+color activeborder "#101a1f"
+#color inactiveborder "#d9dada"
+color inactiveborder "#000a0f"
 
 # gaps
-gap 68 60 60 60
+gap 20 80 20 20
 
 # snapping
 snapdist 6
 
 # application menu
-command term "xterm -g 67x20"
+command term "xterm -g 80x20"
 command lock "xlock -mode blank +description"
 command top "xterm -g 80x24 -e top"
 command "firefox" "firefox-esr --no-remote --new-instance"
@@ -32,7 +34,7 @@ command "qbittorrent" qbittorrent
 command "zathura" zathura
 
 # border
-borderwidth 4
+borderwidth 8
 
 # auto groups
 autogroup 1 "xterm", "XTerm"
@@ -54,6 +56,8 @@ bind-key 4-r "center.sh tl"
 bind-key 4-t "center.sh tr"
 bind-key 4-v "center.sh bl"
 bind-key 4-b "center.sh br"
+
+bind-key M-p "power"
 
 bind-key XF86AudioLowerVolume "soundbar"
 bind-key XF86AudioRaiseVolume "soundbar"
