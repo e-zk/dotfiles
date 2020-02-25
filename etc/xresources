@@ -14,6 +14,6 @@ XLock.planfont:     -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
 XLock.messagefont:  -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
 
 ! sxiv
-Sxiv*background: #101a1f
-Sxiv*foreground: #ffffff
+Sxiv*background: #010b0f
+Sxiv*foreground: #303a3f
 Sxiv*font:       Dina:size=11
