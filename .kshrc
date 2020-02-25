@@ -29,19 +29,12 @@ alias xreload='xrdb -merge ~/.Xdefaults'
 alias yt='mpv --profile youtube'
 
 
-# setup a tmux session for go development
-godev() {
-	cd $GOPATH
+# setup a tmux session for development
+setupdev() {
 	tmux new-session -d
 	tmux split-window -v
 	tmux new-window
-	tmux attach-session -d
-}
-
-cdev() {
-	cd $HOME/usr/src/c
-	tmux new-session -d
-	tmux split-window -v
+	tmux previous-window
 	tmux attach-session -d
 }
 
@@ -77,7 +70,10 @@ mkcd() {
 # reload bar
 barreload() {
 	pkill lemonbar
-	status | bar &
+	stacks clock &
+	stacks date  &
+	stacks bat   &
+	stacks wttr  &
 }
 
 # bounce an interface
