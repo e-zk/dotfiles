@@ -7,7 +7,7 @@ XTerm*font:                -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-1
 XTerm*renderFont:          true
 XTerm*faceName:            gohufont:pixelsize=14:style=regular
 XTerm*faceNameBold:        gohufont:pixelsize=14:style=regular
-XTerm*internalBorder:      16
+XTerm*internalBorder:      24
 XTerm*scrollBar:           0
 XTerm*cursorUnderLine:     false
 XTerm*disallowedWindowOps: 20,21,SetXprop
