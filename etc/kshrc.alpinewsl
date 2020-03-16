@@ -4,5 +4,16 @@ export VISUAL=vis
 export EDITOR=${VISUAL:-vi}
 
 # alias
+alias vim=vis
+alias 230='cd "/mnt/c/Users/ZZZ/Documents/_Uni/CAB230"'
+alias docs='cd "/mnt/c/Users/ZZZ/Documents"'
 
-# functions
+# make new react app
+mkreact() {
+	if [ -z $1 ]; then
+		echo "usage: $0 <app-title>"
+		return 1
+	fi
+	
+	npx create-react-app $@
+}
