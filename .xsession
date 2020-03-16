@@ -28,7 +28,7 @@ printf "" > $HOME/tmp/notif &
 xsetroot -cursor_name X_cursor &
 
 # open a term
-xterm -T "main - xterm" -e vim usr/txt/todo.txt &
+xterm -T "main - xterm" -e $EDITOR usr/txt/todo.txt &
 
 # wm
 exec cwm
