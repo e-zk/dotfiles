@@ -1,0 +1,8 @@
+# variables
+export PATH="$PATH:$HOME/bin"
+export VISUAL=vis
+export EDITOR=${VISUAL:-vi}
+
+# alias
+
+# functions
