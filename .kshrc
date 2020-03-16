@@ -5,6 +5,7 @@
 set -o vi
 
 # variables
+export VIS_PATH="$HOME/etc/vis"
 export PS1="\W\$ "
 
 # alias
