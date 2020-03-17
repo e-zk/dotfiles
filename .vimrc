@@ -16,6 +16,7 @@ set backup
 set backupdir=~/.vim/backups/
 set writebackup
 au BufWritePre * let &bex = '@' . strftime("%F.%R")
+au BufWritePost *.tex silent !make
 
 " fix tmux colorschemes
 set background=dark
