@@ -1,7 +1,7 @@
 -- Eight-color scheme
 local lexers = vis.lexers
 -- dark
-lexers.STYLE_DEFAULT ='back:black,fore:white'
+lexers.STYLE_DEFAULT ='back:default,fore:default'
 lexers.STYLE_NOTHING = 'back:black'
 lexers.STYLE_CLASS = 'fore:yellow'
 lexers.STYLE_COMMENT = 'fore:red,bold'
