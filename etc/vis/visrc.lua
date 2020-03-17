@@ -7,13 +7,17 @@ require('plugins/vis-filetype-settings/vis-filetype-settings')
 
 -- per file settings
 settings = {
-	markdown = {"set expandtab on", "set tabwidth 4"}
+       markdown = {"set expandtab on", "set tabwidth 4"}
 }
 
 vis.events.subscribe(vis.events.INIT, function()
-        -- Your global configuration options
+	-- Your global configuration options
 end)
+
 vis.events.subscribe(vis.events.WIN_OPEN, function(win)
-	-- Your per window configuration options
-	vis:command('set theme mine')
+	-- Your per window configuration options e.g.
+	--vis:command('set number')
+	vis:command('set theme default-16')
+	--vis:command('set theme base16-monokai')
+	vis:command('set theme mineold')
 end)
