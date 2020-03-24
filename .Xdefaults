@@ -5,8 +5,8 @@ XTerm*locale:              utf8
 XTerm*loginShell:          true
 XTerm*font:                -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-1
 XTerm*renderFont:          true
-XTerm*faceName:            gohufont:pixelsize=14:style=regular
-XTerm*faceNameBold:        gohufont:pixelsize=14:style=regular
+XTerm*faceName:            monospace:size=10:style=regular
+XTerm*faceNameBold:        monospace:size=10:style=regular
 XTerm*internalBorder:      24
 XTerm*scrollBar:           0
 XTerm*cursorUnderLine:     false
