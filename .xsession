@@ -4,16 +4,15 @@
 # merge .Xdefaults
 test -f $HOME/.Xdefaults && xrdb -merge $HOME/.Xdefaults
 
-# LANG & PATH
+# LANG
 export LANG=en_AU.UTF-8
-export PATH=$PATH:$HOME/bin
 
 # compton
 picom --config $HOME/etc/compton.conf &
 
 # wallpaper
-hsetroot \#A0AAAF &
-solidwall \#A0AAAF &
+hsetroot \#A3B7C1 &
+solidwall \#A3B7C1 &
 
 # bars
 stacks date  &
@@ -27,8 +26,8 @@ printf "" > $HOME/tmp/notif &
 # cursor
 xsetroot -cursor_name X_cursor &
 
-# open a term
-xterm -T "main - xterm" -e $EDITOR usr/txt/todo.txt &
+# xbanish
+xbanish &
 
 # wm
 exec cwm
