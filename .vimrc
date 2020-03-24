@@ -1,4 +1,5 @@
 " ~/.vimrc : vim configuration
+" NOTE: i don't use vim anymore, this is here for archive purposes
 
 " viM
 set nocompatible
