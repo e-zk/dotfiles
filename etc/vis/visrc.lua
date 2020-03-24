@@ -4,10 +4,16 @@ require('vis')
 -- plugins
 require('plugins/vis-go/vis-go')
 require('plugins/vis-filetype-settings/vis-filetype-settings')
+require('plugins/vis-shebang/vis-shebang')
 
 -- per file settings
 settings = {
        markdown = {"set expandtab on", "set tabwidth 4"}
+}
+
+-- shebang syntaxes
+shebangs = {
+	["#!/bin/sh"] = "bash"
 }
 
 vis.events.subscribe(vis.events.INIT, function()
