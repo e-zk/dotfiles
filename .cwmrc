@@ -1,24 +1,21 @@
 # cwmrc
 
 # fonts
-#fontname "Monoid:size=9"
 fontname "Inconsolata:size=12"
 
 # colors
 color menubg "#ffffff"
 color font "#000000"
-color menufg "#d9dada"
-color selfont "#000000"
+color menufg "#eaedef"
+color selfont "#1f1f1f"
 color activeborder "#ffffff"
-#color activeborder "#101a1f"
-color inactiveborder "#101010"
-#color inactiveborder "#000a0f"
+color inactiveborder "#eaedef"
 
 # border
 borderwidth 3
 
 # gaps
-gap 20 80 20 20
+gap 80 80 20 20
 
 # snapping
 snapdist 6
@@ -45,25 +42,24 @@ autogroup 5 "nowplaying", "mpv"
 
 # keys 
 
-
 bind-key 4-Up pointer-move-up-big
 bind-key 4-Down pointer-move-down-big
 bind-key 4-Left pointer-move-left-big
 bind-key 4-Right pointer-move-left-big
 
-
 bind-key 4-l lock
-bind-key 4-g "center.sh md"
-bind-key 4-r "center.sh tl"
-bind-key 4-t "center.sh tr"
-bind-key 4-v "center.sh bl"
-bind-key 4-b "center.sh br"
+
+bind-key MS-g "center.sh md"
+bind-key MS-t window-snap-up-left
+bind-key MS-y window-snap-up-right
+bind-key MS-v window-snap-down-left
+bind-key MS-b window-snap-down-right
 
 bind-key M-p "power"
 
-bind-key XF86AudioLowerVolume "soundbar"
-bind-key XF86AudioRaiseVolume "soundbar"
-bind-key XF86AudioMute "soundbar" 
+#bind-key XF86AudioLowerVolume "soundbar"
+#bind-key XF86AudioRaiseVolume "soundbar"
+#bind-key XF86AudioMute "soundbar" 
 
 
 # wm
