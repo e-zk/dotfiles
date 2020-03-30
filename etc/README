@@ -3,10 +3,14 @@
 various configuration files
 
 
-	./bar.conf			# bar configuration
-	./colors/			# various XTerm colorschemes
-	./colorscheme -> ./colors/*	# current colorscheme
-	./compton.conf			# compton config
-	./ff/				# firefox css
-	./wallpaper.jpg			# current wallpaper
-	./xresources			# included in ~/.Xdefaults
+	bar.conf			# bar configuration (shell script)
+	colors/				# various XTerm colorschemes
+	colorscheme -> ./colors/*	# symlink to current colorscheme
+	compton.conf			# picom config
+	ff/				# firefox css (broken, unfinished)
+	kshrc*				# main kshrc
+	kshrc.openbsd			# kshrc for openbsd systems
+	kshrc.alpinewsl			# kshrc for WSL
+	wallpaper.jpg			# current wallpaper
+	xresources			# xresources, sourced by ~/.Xdefaults
+	vis/				# vis editor themes, config + plugins
