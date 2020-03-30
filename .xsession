@@ -4,14 +4,15 @@
 # merge .Xdefaults
 test -f $HOME/.Xdefaults && xrdb -merge $HOME/.Xdefaults
 
-# LANG
+# LANG & PATH
 export LANG=en_AU.UTF-8
+PATH=$PATH:$HOME/bin
 
 # compton
 picom --config $HOME/etc/compton.conf &
 
 # wallpaper
-hsetroot \#A3B7C1 &
+xsetroot -solid \#A3B7C1 &
 solidwall \#A3B7C1 &
 
 # bars
@@ -20,14 +21,14 @@ stacks clock &
 stacks bat   & 
 stacks wttr  &
 
-# reset notifications
-printf "" > $HOME/tmp/notif &
+# notifications
+notified &
 
 # cursor
 xsetroot -cursor_name X_cursor &
 
 # xbanish
-xbanish &
+xbanish -i mod1 &
 
 # wm
 exec cwm
