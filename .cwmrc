@@ -8,8 +8,8 @@ color menubg "#ffffff"
 color font "#000000"
 color menufg "#eaedef"
 color selfont "#1f1f1f"
-color activeborder "#ffffff"
-color inactiveborder "#eaedef"
+color activeborder "#eaedef"
+color inactiveborder "#e0e0e0"
 
 # border
 borderwidth 3
@@ -19,6 +19,9 @@ gap 80 80 20 20
 
 # snapping
 snapdist 6
+
+# ignores
+ignore sxiv
 
 # application menu
 command term "xterm -g 80x20"
@@ -41,7 +44,6 @@ autogroup 4 "Xephyr", "Xephyr"
 autogroup 5 "nowplaying", "mpv"
 
 # keys 
-
 bind-key 4-Up pointer-move-up-big
 bind-key 4-Down pointer-move-down-big
 bind-key 4-Left pointer-move-left-big
@@ -61,6 +63,5 @@ bind-key M-p "power"
 #bind-key XF86AudioRaiseVolume "soundbar"
 #bind-key XF86AudioMute "soundbar" 
 
-
-# wm
+# wms
 wm fvwm2 /usr/X11R6/bin/fvwm
