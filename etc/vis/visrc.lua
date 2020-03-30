@@ -8,12 +8,19 @@ require('plugins/vis-shebang/vis-shebang')
 
 -- per file settings
 settings = {
-       markdown = {"set expandtab on", "set tabwidth 4"}
+	markdown = {"set expandtab on", "set tabwidth 4"}
+--	latex = function(win)
+--		local this_file = vis.win.file
+--		if this_file.size == 0 then
+--		end
+--	end
+
 }
 
 -- shebang syntaxes
 shebangs = {
-	["#!/bin/sh"] = "bash"
+	["#!/bin/sh"] = "bash",
+	["#!/bin/ksh"] = "bash"
 }
 
 vis.events.subscribe(vis.events.INIT, function()
@@ -25,5 +32,5 @@ vis.events.subscribe(vis.events.WIN_OPEN, function(win)
 	--vis:command('set number')
 	vis:command('set theme default-16')
 	--vis:command('set theme base16-monokai')
-	vis:command('set theme mineold')
+	vis:command('set theme momoko-light')
 end)
