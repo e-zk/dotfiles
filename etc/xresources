@@ -14,6 +14,8 @@ XLock.planfont:     -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
 XLock.messagefont:  -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
 
 ! sxiv
-Sxiv*background: #7f7f7f
-Sxiv*foreground: #ffffff
+Sxiv*background: #E0E9EE
+Sxiv*foreground: #000000
+Sxiv*height: 12
+Sxiv*width: 12
 Sxiv*font:       gohufont:size=11

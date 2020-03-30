@@ -1,25 +1,37 @@
+#!/bin/ksh
+# kshrc for openbsd systems
+
 # variables
 export GOPATH="$HOME/usr/go"
 export PATH="$PATH:$HOME/bin/vid:$HOME/bin/img:$HOME/bin/uni:$GOPATH/bin"
 export WALLPATH="$HOME/usr/img"
 export VISUAL=vise
 export EDITOR=${VISUAL:-vi}
+export MAILRC=$ETC/mailrc
+# frig off, xauth
+#export XAUTHORITY=$ETC/.Xauthority
+# frig off, xdg
+export XDG_CONFIG_HOME=$ETC
+export XDG_CACHE_HOME=$HOME/tmp
 
 # alias
+alias irssi='irssi --home=$ETC/irssi'
+alias sxiv='$HOME/src/git/sxiv/sxiv'
+alias vise='TERM=xterm-256color vise'
 alias todo='vim $HOME/usr/txt/todo.txt'
-alias img='sxiv -g 320x320'
+alias img='ls -t | sxiv -iog 320x320'
 #alias upload='doas teensyloader --mcu=atmega32u4 -v -w'
 alias xreload='xrdb -merge ~/.Xdefaults'
 alias yt='mpv --profile youtube'
-
 
 # reload bar
 barreload() {
 	pkill lemonbar
 	stacks clock &
-	stacks date  &
+#	stacks date  &
 	stacks bat   &
 	stacks wttr  &
+	#stacks music &
 }
 
 # bounce an interface
