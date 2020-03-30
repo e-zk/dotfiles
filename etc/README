@@ -3,14 +3,16 @@
 
 various configuration files
 
-	bar.conf			# bar configuration (shell script)
-	colors/				# various XTerm colorschemes
-	colorscheme -> ./colors/*	# symlink to current colorscheme
-	compton.conf			# picom config
-	kshrc*				# main kshrc
-	kshrc.openbsd			# kshrc for openbsd systems
-	kshrc.alpinewsl			# kshrc for WSL
-	wallpaper.jpg			# current wallpaper
-	xresources			# xresources, sourced by ~/.Xdefaults
-	vis/				# vis editor themes, config + plugins
+	bar.conf                        # bar configuration (shell script)
+
+	bar.conf                        # bar configuration (shell script)
+	colors/                         # various XTerm colorschemes
+	colorscheme -> ./colors/*       # symlink to current colorscheme
+	compton.conf                    # picom config
+	kshrc*                          # main kshrc
+	kshrc.openbsd                   # kshrc for openbsd systems
+	kshrc.alpinewsl                 # kshrc for WSL
+	wallpaper.jpg                   # current wallpaper
+	xresources                      # xresources, sourced by ~/.Xdefaults
+	vis/                            # vis editor themes, config + plugins
 

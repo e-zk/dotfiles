@@ -7,23 +7,23 @@ screenshot can be found here: etc/scrot.png
 structure
 ---------
 
-	~/				# ahh, there's no place like $HOME
-	~/.Xdefaults			# X resouces file, loaded by ~/.xsession
-	~/.xsession			# shell script run by xenodm on login
-	~/bin/				# personal scripts: https://github.com/e-zk/bin
-	~/etc/				# various configuration files, also set as XDG_CONFIG_HOME
-	~/src/				# misc. git repos, program source (not in repo)
-	~/tmp/				# temporary files (not in repo)
-	~/usr/				# documents, etc (not in repo)
+	~/                              # ahh, there's no place like $HOME
+	~/.Xdefaults                    # X resouces file, loaded by ~/.xsession
+	~/.xsession                     # shell script run by xenodm on login
+	~/bin/                          # personal scripts: https://github.com/e-zk/bin
+	~/etc/                          # various configuration files, also set as XDG_CONFIG_HOME
+	~/src/                          # misc. git repos, program source (not in repo)
+	~/tmp/                          # temporary files (not in repo)
+	~/usr/                          # documents, etc (not in repo)
 
 programs
 --------
 
-	terminal ......... xterm
-	shell ............ ksh
-	editor ........... vis
-	bar(s) ........... lemonbar-xft
-	compositor ....... picom
-	window manager ... cwm
-	notifications .... notif + notified (custom scripts)
+	terminal ........................ xterm
+	shell ........................... ksh
+	editor .......................... vis
+	bar(s) .......................... lemonbar-xft
+	compositor ...................... picom
+	window manager .................. cwm
+	notifications ................... notif + notified (custom scripts)
 
