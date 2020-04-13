@@ -1,21 +1,24 @@
 # cwmrc
 
 # fonts
-fontname "Inconsolata:size=12"
+fontname "gohufont:size=13"
 
 # colors
 color menubg "#ffffff"
 color font "#000000"
 color menufg "#eaedef"
 color selfont "#1f1f1f"
-color activeborder "#eaedef"
-color inactiveborder "#e0e0e0"
+#color activeborder "#fafdff"
+#color inactiveborder "#f0f0f0"
+color activeborder "#f0faff"
+color inactiveborder "#303a3f"
 
 # border
-borderwidth 3
+borderwidth 4
 
 # gaps
-gap 80 80 20 20
+#gap 60 20 260 20
+gap 60 20 20 20
 
 # snapping
 snapdist 6
@@ -28,8 +31,8 @@ command term "xterm -g 80x20"
 command lock "xlock -mode blank +description"
 command top "xterm -g 80x24 -e top"
 command "firefox" "firefox-esr --no-remote --new-instance"
-command "firefox (uni)" "firefox-esr --new-instance -P Uni"
-command "firefox (dev)" "firefox-esr --new-instance -P development"
+command "firefox (uni)" "firefox-esr --no-remote --new-instance -P Uni"
+command "firefox (dev)" "firefox-esr --no-remoute --new-instance -P development"
 command "firefox (temporary)" "tmpfox" 
 command "gcolor" gcolor2
 command "gimp" gimp
@@ -58,6 +61,8 @@ bind-key MS-v window-snap-down-left
 bind-key MS-b window-snap-down-right
 
 bind-key M-p "power"
+bind-key M-b "bat"
+bind-key M-t "ttime"
 
 #bind-key XF86AudioLowerVolume "soundbar"
 #bind-key XF86AudioRaiseVolume "soundbar"

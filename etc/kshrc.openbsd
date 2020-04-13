@@ -8,8 +8,7 @@ export WALLPATH="$HOME/usr/img"
 export VISUAL=vise
 export EDITOR=${VISUAL:-vi}
 export MAILRC=$ETC/mailrc
-# frig off, xauth
-#export XAUTHORITY=$ETC/.Xauthority
+export MBOX=${HOME}/tmp/mbox
 # frig off, xdg
 export XDG_CONFIG_HOME=$ETC
 export XDG_CACHE_HOME=$HOME/tmp
@@ -23,16 +22,6 @@ alias img='ls -t | sxiv -iog 320x320'
 #alias upload='doas teensyloader --mcu=atmega32u4 -v -w'
 alias xreload='xrdb -merge ~/.Xdefaults'
 alias yt='mpv --profile youtube'
-
-# reload bar
-barreload() {
-	pkill lemonbar
-	stacks clock &
-#	stacks date  &
-	stacks bat   &
-	stacks wttr  &
-	#stacks music &
-}
 
 # bounce an interface
 # usage: bounce <if>

@@ -14,8 +14,33 @@ XLock.planfont:     -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
 XLock.messagefont:  -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
 
 ! sxiv
-Sxiv*background: #E0E9EE
-Sxiv*foreground: #000000
+!Sxiv*background: #E0E9EE
+Sxiv*background: #2f2f2f
+Sxiv*foreground: #ffffff
 Sxiv*height: 12
 Sxiv*width: 12
 Sxiv*font:       gohufont:size=11
+
+! ssh-askpass
+ssh-askpass*font:      -*-fixed-medium-r-*-*-18-*-*-*-*-*-*-*
+ssh-askpass*fixedFont: -*-fixed-medium-r-*-*-18-*-*-*-*-*-*-*
+ssh-askpass.foreground: #f0faff
+ssh-askpass.background: #000000
+ssh-askpass*foreground: #f0faff
+ssh-askpass*background: #000000
+
+ssh-askpass.*.shadowThickness: 0
+ssh-askpass.borderWidth: 0
+ssh-askpass.verticalSpacing: 10
+ssh-askpass.horizontalSpacing: 10
+
+ssh-askpass.*Button.borderWidth: 2
+ssh-askpass.*Button.borderColor: #1a1f1f
+ssh-askpass.*Button.background: #1a1f1f
+
+ssh-askpass.indicator.borderWidth: 2
+ssh-askpass.indicator.borderColor: #000000
+ssh-askpass.indicator.background: #303a3f
+ssh-askpass.indicator.foreground: #44aa66
+ssh-askpass.indicator.minimumCount: 8
+ssh-askpass.indicator.maximumCount: 16

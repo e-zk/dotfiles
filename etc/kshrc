@@ -11,7 +11,7 @@ export VIS_PATH="$HOME/etc/vis"
 export PS1="\W\$ "
 
 # alias
-alias \!\!='history | tail -1 | cut -f 2'
+alias \!\!='$(fc -l | tail -1 | cut -f 2)'
 alias f='finger'
 alias h='history -r | less'
 alias j='jobs -l'
