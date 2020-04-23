@@ -15,7 +15,7 @@ XLock.messagefont:  -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
 
 ! sxiv
 !Sxiv*background: #E0E9EE
-Sxiv*background: #2f2f2f
+Sxiv*background: #1f1f1f
 Sxiv*foreground: #ffffff
 Sxiv*height: 12
 Sxiv*width: 12

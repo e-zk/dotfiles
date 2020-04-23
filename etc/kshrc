@@ -8,7 +8,11 @@ set -o vi
 
 # variables
 export VIS_PATH="$HOME/etc/vis"
-export PS1="\W\$ "
+if [ $(id -u) -eq 0 ]; then
+	export PS1='# '
+else
+	export PS1='\$ '
+fi
 
 # alias
 alias \!\!='$(fc -l | tail -1 | cut -f 2)'

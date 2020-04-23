@@ -2,9 +2,9 @@
 require('vis')
 
 -- plugins
-require('plugins/vis-go/vis-go')
-require('plugins/vis-filetype-settings/vis-filetype-settings')
-require('plugins/vis-shebang/vis-shebang')
+--require('plugins/vis-go/vis-go')
+--require('plugins/vis-filetype-settings/vis-filetype-settings')
+--require('plugins/vis-shebang/vis-shebang')
 
 -- per file settings
 settings = {
