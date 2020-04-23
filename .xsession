@@ -4,33 +4,42 @@
 # ~/.xsession : loaded on login by xenodm(1)
 
 # merge .Xdefaults
-test -f ${HOME}/.Xdefaults && xrdb -merge ${HOME}/.Xdefaults
+if [ -f ${HOME}/.Xdefaults ]; then
+	xrdb -merge ${HOME}/.Xdefaults
+fi
+
+# dbus
+if [ -x /usr/local/bin/dbus-launch -a -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
+	eval `dbus-launch --sh-syntax --exit-with-x11`
+fi
 
 # LANG & PATH
 export LANG=en_AU.UTF-8
 PATH=${PATH}:${HOME}/bin
 
 # compton
-picom --config ${HOME}/etc/compton.conf &
+compon &
 
 # wallpaper
-xsetroot -solid \#A3B7C1 &
-solidwall \#A3B7C1 &
+#xsetroot -solid \#A3B7C1 &
+#solidwall \#A3B7C1 &
+[ -f "/home/zzz/etc/wallpaper.jpg" ] && xwallpaper --zoom /home/zzz/etc/wallpaper.jpg
 
 # bars
 barreload &
 
 # notifications
-rm -f ${HOME}/tmp/notified.pid &
+rm -f ${HOME}/var/notified.pid &
 notified &
 
 # cursor
-xsetroot -cursor_name X_cursor
+xsetroot -cursor_name X_cursor &
 
 # xbanish
 xbanish -i mod1 &
 
-xwelcome.sh &
+# picom
+compon &
 
 # wm
-exec cwm
+exec cwm -c ${HOME}/etc/cwmrc

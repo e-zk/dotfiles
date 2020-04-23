@@ -8,17 +8,14 @@ color menubg "#ffffff"
 color font "#000000"
 color menufg "#eaedef"
 color selfont "#1f1f1f"
-#color activeborder "#fafdff"
-#color inactiveborder "#f0f0f0"
-color activeborder "#f0faff"
-color inactiveborder "#303a3f"
+color activeborder "#3f3f3f"
+color inactiveborder "#2f2f2f"
 
 # border
-borderwidth 4
+borderwidth 1
 
 # gaps
-#gap 60 20 260 20
-gap 60 20 20 20
+gap 80 20 20 20
 
 # snapping
 snapdist 6
@@ -29,15 +26,15 @@ ignore sxiv
 # application menu
 command term "xterm -g 80x20"
 command lock "xlock -mode blank +description"
-command top "xterm -g 80x24 -e top"
-command "firefox" "firefox-esr --no-remote --new-instance"
-command "firefox (uni)" "firefox-esr --no-remote --new-instance -P Uni"
-command "firefox (dev)" "firefox-esr --no-remoute --new-instance -P development"
-command "firefox (temporary)" "tmpfox" 
-command "gcolor" gcolor2
-command "gimp" gimp
-command "qbittorrent" qbittorrent
-command "zathura" zathura
+command "  top  " "xterm -g 80x24 -e top"
+command "  firefox  " "firefox"
+command "    firefox (uni)  " "firefox -P Uni"
+command "    firefox (dev)  " "firefox -P development"
+command "    firefox (tmp)  " "tmpfox" 
+command "  colorpick  " colorsel
+#command "  gimp  " gimp
+#command "  qbittorrent  " qbittorrent
+command "  zathura  " zathura
 
 # auto groups
 autogroup 1 "xterm", "XTerm"
@@ -66,7 +63,7 @@ bind-key M-t "ttime"
 
 #bind-key XF86AudioLowerVolume "soundbar"
 #bind-key XF86AudioRaiseVolume "soundbar"
-#bind-key XF86AudioMute "soundbar" 
+bind-key XF86AudioMute "mute"
 
 # wms
 wm fvwm2 /usr/X11R6/bin/fvwm
