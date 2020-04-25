@@ -8,8 +8,6 @@ structure
 ---------
 
 	~/                              # ahh, there's no place like $HOME
-	~/.Xdefaults                    # X resouces file, loaded by ~/.xsession + xenodm
-	~/.xsession                     # shell script run by xenodm on login
 	~/bin/                          # personal scripts: https://github.com/e-zk/bin
 	~/etc/                          # various configuration files, also set as XDG_CONFIG_HOME
 	~/opt/                          # misc. (not in repo)
