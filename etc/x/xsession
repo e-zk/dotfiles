@@ -23,10 +23,11 @@ compon &
 # wallpaper
 #xsetroot -solid \#A3B7C1 &
 #solidwall \#A3B7C1 &
-[ -f "/home/zzz/etc/wallpaper.jpg" ] && xwallpaper --zoom /home/zzz/etc/wallpaper.jpg
+[ -f "/home/zzz/etc/wallpaper.jpg" ] && xwallpaper --zoom /home/zzz/etc/wallpaper.jpg || solidwall \#114466
 
 # bars
-barreload &
+#barreload &
+status | bar &
 
 # notifications
 rm -f ${HOME}/var/notified.pid &

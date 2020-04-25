@@ -1,8 +1,5 @@
-!    \/ |\ /_\ |= /_\ |  -|- /_
-! () /\ |/ \_  |  | | |_  |   /
-! ~/.Xdefaults : Xresources file
+! xterm : 
 
-! xterm
 XTerm*locale:              utf8
 XTerm*loginShell:          true
 XTerm*font:                -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-1
@@ -10,21 +7,9 @@ XTerm*renderFont:          true
 XTerm*faceName:            Dina:pixelsize=14:style=Regular
 XTerm*faceNameBold:        Dina:pixelsize=14:style=Regular
 XTerm*internalBorder:      24
-XTerm*borderWidth:	0
+XTerm*borderWidth:         0
 XTerm*scrollBar:           0
 XTerm*cursorUnderLine:     false
 XTerm*disallowedWindowOps: 20,21,SetXprop
-XTerm*allowBoldFonts: false
-XTerm*v100.saveLines: 10240
-
-! xft
-Xft.antialias: 1
-Xft.autohint:  1
-Xft.dpi: 96
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
-Xft.rgba: rgb
-
-! include xresources, and colors
-#include "etc/xresources"
-#include "etc/colorscheme"
+XTerm*allowBoldFonts:      false
+XTerm*v100.saveLines:      10240

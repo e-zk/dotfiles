@@ -1,0 +1,17 @@
+! xresources
+
+
+! Xft stuff
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+
+! includes
+#include "res/askpass"
+#include "res/sxiv"
+#include "res/xterm"
+#include "res/xlock"
+#include "../colorscheme"

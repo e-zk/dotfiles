@@ -1,0 +1,9 @@
+~/etc/x
+=======
+
+X configuration files
+
+	res/                            # x resource files
+	xresources                      # main xresources file, loads files form res/*
+	xsession                        # xsession script, loaded by xenodm(1) on login
+

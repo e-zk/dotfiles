@@ -8,13 +8,13 @@ structure
 ---------
 
 	~/                              # ahh, there's no place like $HOME
-	~/.Xdefaults                    # X resouces file, loaded by ~/.xsession
+	~/.Xdefaults                    # X resouces file, loaded by ~/.xsession + xenodm
 	~/.xsession                     # shell script run by xenodm on login
 	~/bin/                          # personal scripts: https://github.com/e-zk/bin
 	~/etc/                          # various configuration files, also set as XDG_CONFIG_HOME
-	~/src/                          # misc. git repos, program source (not in repo)
-	~/tmp/                          # temporary files (not in repo)
-	~/usr/                          # documents, etc (not in repo)
+	~/opt/                          # misc. (not in repo)
+	~/usr/                          # documents, images, etc (not in repo)
+	~/var/                          # temp files, pid files, XDG_CACHE_HOME (not in repo)
 
 programs
 --------
