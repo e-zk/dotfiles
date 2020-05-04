@@ -14,7 +14,7 @@ structure
 	~/usr/                          # documents, images, etc (not in repo)
 	~/var/                          # temp files, pid files, XDG_CACHE_HOME (not in repo)
 
-programs
+brograms
 --------
 
 	terminal ........................ xterm
