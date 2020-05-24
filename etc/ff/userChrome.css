@@ -1,0 +1,107 @@
+window {
+	font-family: "Dina", "gohufont", monospace !important;
+}
+
+* {
+	box-sizing: border-box !important;
+	border-color: transparent !important;
+}
+
+:root {
+	--main-bg: #0a0f0f;
+	--light-bg: #1a1f1f;
+	--light-bg2:#2a2f2f;
+
+	--main-fg: #cecece;
+
+	--lwt-text-color: var(--main-fg) !important;
+	--cfr-active-color: #3a3f3f !important;
+}
+
+:root {
+	--toolbar-bgcolor: var(--main-bg) !important;
+	--toolbar-color: var(--main-fg) !important;
+	--tabs-border-color: transparent !important;
+}
+
+#titlebar {
+	background: var(--main-bg) !important;
+}
+#nav-bar {
+	width: 100% !important;
+}
+#navigator-toolbox {
+	--tabs-border-color: transparent !important;
+}
+
+.browser-toolbar:not(.titlebar-color) {
+	background-image: none !important;
+	padding: 12px 16px !important;
+}
+
+#urlbar, .searchbar-textbox {
+	border-color: transparent !important;
+	border-radius: 0;
+	box-shadow: 0 0 0 transparent;
+	background-color: var(--main-bg) !important;
+	padding: 1em 0.5em;
+}
+
+#identity-box {
+	display: none;
+}
+#pageActionButton {
+	opacity: 0;
+}
+
+#TabsToolbar {
+	background-color: var(--light-bg) !important;
+} 
+#TabsToolbar .toolbarbutton-1,
+.tabbrowser-arrowscrollbox > .scrollbutton-up, .tabbrowser-arrowscrollbox > .scrollbutton-down {
+	opacity: 0 !important;
+}
+#TabsToolbar:hover .toolbarbutton-1,
+.tabbrowser-arrowscrollbox > .scrollbutton-up, .tabbrowser-arrowscrollbox > .scrollbutton-down {
+	opacity: 1 !important;
+}
+.tab-background[selected="true"] {
+	background-color: var(--main-bg) !important;
+	background-image: none !important;
+}
+
+tab:not([selected="true"]) {
+	background-color: #1a1f1f !important;
+}
+
+tab .tab-icon,
+.tab-icon-image {
+	display: none !important;
+}
+.tabbrowser-tab:not([pinned])[fadein] {
+	min-width: 10px !important;
+	max-width: 100% !important;
+}
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+	border-left: none !important;
+}
+
+.tab-line[selected="true"] {
+	background-color: var(--main-bg) !important;
+}
+
+.tab-content {
+	padding: 12px 16px !important;
+}
+
+.tab-label {
+	-moz-box-flex: 1 !important;
+	text-align: center !important;
+}
+.close-icon {
+	opacity: 0;
+}
+.close-icon:hover {
+	opacity: 1;
+}
