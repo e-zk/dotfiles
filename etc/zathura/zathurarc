@@ -1,0 +1,19 @@
+set font "Fira Mono normal 11"
+
+set statusbar-bg \#000000
+set statusbar-fg \#FFFFFF
+
+set default-bg \#1F1F1F
+set default-fg \#FFFFFF
+
+set inputbar-bg \#1F1F1F
+set inputbar-fg \#FFFFFF
+
+set recolor-lightcolor \#1F1F1F
+set recolor-darkcolor  \#FFFFFF
+
+set page-padding 4
+
+set statusbar-h-padding 16
+set statusbar-v-padding 20
+
