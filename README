@@ -17,11 +17,11 @@ structure
 programs
 --------
 
-	terminal ........................ xterm
-	shell ........................... ksh
-	editor .......................... vis
-	bar(s) .......................... lemonbar-xft
-	compositor ...................... picom
-	window manager .................. cwm
-	notifications ................... notif + notified (custom scripts)
+	terminal                        # xterm
+	shell                           # ksh
+	editor                          # vis
+	bar(s)                          # lemonbar-xft
+	compositor                      # picom
+	window manager                  # cwm
+	notifications                   # notif + notified (custom scripts)
 

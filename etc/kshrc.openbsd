@@ -21,7 +21,7 @@ alias vise='TERM=xterm-256color vise'
 alias todo='vim $HOME/usr/txt/todo.txt'
 alias img='ls -t | sxiv -iog 320x320'
 #alias upload='doas teensyloader --mcu=atmega32u4 -v -w'
-alias xreload='xrdb -merge ~/.Xdefaults'
+alias xreload='xrdb -merge ~/etc/x/xresources'
 alias yt='mpv --profile youtube'
 
 # bounce an interface

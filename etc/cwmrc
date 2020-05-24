@@ -8,14 +8,15 @@ color menubg "#ffffff"
 color font "#000000"
 color menufg "#eaedef"
 color selfont "#1f1f1f"
-color activeborder "#707f7f"
-color inactiveborder "#5f5f5f"
+color activeborder "#181a1e"
+color inactiveborder "#181a1e"
 
 # border
-borderwidth 1
+borderwidth 0
 
 # gaps
-gap 70 20 20 20
+#gap 70 20 20 20
+gap 10 50 10 10
 
 # snapping
 snapdist 5
