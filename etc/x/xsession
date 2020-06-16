@@ -17,13 +17,11 @@ fi
 export LANG=en_AU.UTF-8
 PATH=${PATH}:${HOME}/bin
 
-# compton
-compon &
-
 # wallpaper
 #xsetroot -solid \#A3B7C1 &
 #solidwall \#A3B7C1 &
-[ -f "/home/zzz/etc/wallpaper.jpg" ] && xwallpaper --zoom /home/zzz/etc/wallpaper.jpg || solidwall \#114466
+#[ -f "/home/zzz/etc/wallpaper.jpg" ] && xwallpaper --zoom /home/zzz/etc/wallpaper.jpg || solidwall \#eaedef
+solidwall \#9aaaaf
 
 # bars
 #barreload &

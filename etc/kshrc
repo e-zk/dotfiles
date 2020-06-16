@@ -6,13 +6,26 @@
 # vi mode baby
 set -o vi
 
+# prompt
+_prompt() {
+	if [ $? -ne 0 -a $? -ne 130 ]; then
+		printf '\033[31m'
+	else
+		printf '\033[97m'
+	fi
+
+	if [ $(id -u) -ne 0 ]; then
+		printf '$'
+	else
+		printf '#'
+	fi
+
+	printf '\033[0m'
+}
+export PS1='$(_prompt) '
+
 # variables
 export VIS_PATH="$HOME/etc/vis"
-if [ $(id -u) -eq 0 ]; then
-	export PS1='# '
-else
-	export PS1='\$ '
-fi
 
 # alias
 alias \!\!='$(fc -l | tail -1 | cut -f 2)'
@@ -27,10 +40,12 @@ alias p='ps'
 alias rm='rm -i'
 
 # OS specific configuration
-case "$(uname -s)" in
-	OpenBSD) . $HOME/etc/kshrc.openbsd   ;;
-	Linux)   . $HOME/etc/kshrc.alpinewsl ;;
-esac
+if [ $(id -u) -ne 0 ]; then
+	case "$(uname -s)" in
+		OpenBSD) . $HOME/etc/kshrc.openbsd   ;;
+		Linux)   . $HOME/etc/kshrc.alpinewsl ;;
+	esac
+fi
 
 # setup a tmux session for development
 setupdev() {
@@ -71,4 +86,6 @@ mkcd() {
 }
 
 # shh...
-. ~/.secrets
+if [ $(id -u) -ne 0 ]; then
+	. ~/.secrets
+fi
