@@ -8,15 +8,16 @@ color menubg "#ffffff"
 color font "#000000"
 color menufg "#eaedef"
 color selfont "#1f1f1f"
-color activeborder "#181a1e"
-color inactiveborder "#181a1e"
+color activeborder "#5f5f5f"
+color inactiveborder "#4f4f4f"
 
 # border
 borderwidth 0
 
 # gaps
 #gap 70 20 20 20
-gap 10 50 10 10
+gap 40 80 40 40
+
 
 # snapping
 snapdist 5
@@ -27,14 +28,15 @@ ignore sxiv
 # application menu
 command term "xterm -g 80x20"
 command lock "xlock -mode blank +description"
-command " top " "xterm -g 80x24 -e top"
-command " firefox " "firefox"
-command "  firefox (uni) " "firefox -P Uni"
-command "  firefox (dev) " "firefox -P development"
-command "  firefox (tmp) " "tmpfox" 
-command " colorpick  " colorsel
-#command   qbittorrent  " qbittorrent
-command " zathura " zathura
+command "top " "xterm -g 80x24 -e top"
+command "firefox " "firefox"
+command " firefox (uni) " "firefox -P Uni"
+command " firefox (dev) " "firefox -P development"
+command " firefox (tmp) " "tmpfox" 
+command "colorpick  " colorsel
+#command  qbittorrent  " qbittorrent
+command "xmag" xmag
+command "zathura " zathura
 
 # auto groups
 autogroup 1 "xterm", "XTerm"
@@ -44,6 +46,8 @@ autogroup 4 "Xephyr", "Xephyr"
 autogroup 5 "nowplaying", "mpv"
 
 # keys 
+unbind-key M-Left
+unbind-key M-Right
 bind-key 4-Up pointer-move-up-big
 bind-key 4-Down pointer-move-down-big
 bind-key 4-Left pointer-move-left-big

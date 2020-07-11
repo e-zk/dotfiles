@@ -1,0 +1,21 @@
+static char *thing[] = {
+	"16 16 2 1",
+	"  c #000000",
+	"X c #cecece",
+	"                ",
+	"                ",
+	"       X        ",
+	"      XXX       ",
+	"     XXX        ",
+	"    XXX         ",
+	"   XXX          ",
+	"  XXXXXXXXXXXX  ",
+	"  XXXXXXXXXXXX  ",
+	"   XXX          ",
+	"    XXX         ",
+	"     XXX        ",
+	"      XXX       ",
+	"       X        ",
+	"                ",
+	"                "
+};

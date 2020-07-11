@@ -10,7 +10,7 @@ window {
 :root {
 	--main-bg: #0a0f0f;
 	--light-bg: #1a1f1f;
-	--light-bg2:#2a2f2f;
+	--light-bg2:#2f2f2f;
 
 	--main-fg: #cecece;
 
@@ -34,6 +34,25 @@ window {
 	--tabs-border-color: transparent !important;
 }
 
+#back-button {
+	list-style-image: url("file:///home/zzz/etc/ff/back.png") !important;
+}
+#forward-button {
+	list-style-image: url("file:///home/zzz/etc/ff/forward.png") !important;
+}
+#PanelUI-menu-button {
+	list-style-image: url("file:///home/zzz/etc/ff/menu.png") !important;
+}
+#PlacesChevron, #nav-bar-overflow-button {
+	list-style-image: url("file:///home/zzz/etc/ff/overflow.png") !important;
+}
+.toolbarbutton-1[label="uMatrix"] {
+	opacity: 0 !important;
+}
+.toolbarbutton-1[label="uMatrix"]:hover {
+	opacity: 1 !important;
+}
+
 .browser-toolbar:not(.titlebar-color) {
 	background-image: none !important;
 	padding: 12px 16px !important;
@@ -42,9 +61,14 @@ window {
 #urlbar, .searchbar-textbox {
 	border-color: transparent !important;
 	border-radius: 0;
-	box-shadow: 0 0 0 transparent;
+	box-shadow: 0 0 0 transparent !important;
 	background-color: var(--main-bg) !important;
-	padding: 1em 0.5em;
+  	padding: 1em 0.0em;
+	color: var(--main-fg) !important;
+}
+#urlbar:hover, .searchbar-textbox:hover {
+	box-shadow: none !important;
+	color: #ffffff !important;
 }
 
 #identity-box {
@@ -55,7 +79,10 @@ window {
 }
 
 #TabsToolbar {
-	background-color: var(--light-bg) !important;
+	/*background-color: var(--light-bg) !important;*/
+	background-color: var(--main-bg) !important;
+	padding: 0px;
+	margin: 0px;
 } 
 #TabsToolbar .toolbarbutton-1,
 .tabbrowser-arrowscrollbox > .scrollbutton-up, .tabbrowser-arrowscrollbox > .scrollbutton-down {
@@ -65,13 +92,16 @@ window {
 .tabbrowser-arrowscrollbox > .scrollbutton-up, .tabbrowser-arrowscrollbox > .scrollbutton-down {
 	opacity: 1 !important;
 }
+.tab-background {
+	border: 0px none transparent !important;
+}
 .tab-background[selected="true"] {
 	background-color: var(--main-bg) !important;
 	background-image: none !important;
 }
 
 tab:not([selected="true"]) {
-	background-color: #1a1f1f !important;
+	background-color: var(--light-bg) !important;
 }
 
 tab .tab-icon,
@@ -84,15 +114,19 @@ tab .tab-icon,
 }
 .tabbrowser-tab::after,
 .tabbrowser-tab::before {
+	padding: 0;
+	margin: 0;
 	border-left: none !important;
 }
 
 .tab-line[selected="true"] {
 	background-color: var(--main-bg) !important;
+  display: none !important;
 }
 
 .tab-content {
 	padding: 12px 16px !important;
+  margin: 0px;
 }
 
 .tab-label {

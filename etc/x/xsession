@@ -9,9 +9,9 @@ if [ -f ${HOME}/.Xdefaults ]; then
 fi
 
 # dbus
-if [ -x /usr/local/bin/dbus-launch -a -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
-	eval `dbus-launch --sh-syntax --exit-with-x11`
-fi
+#if [ -x /usr/local/bin/dbus-launch -a -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
+#	eval `dbus-launch --sh-syntax --exit-with-x11`
+#fi
 
 # LANG & PATH
 export LANG=en_AU.UTF-8
@@ -35,7 +35,7 @@ notified &
 xsetroot -cursor_name X_cursor &
 
 # xbanish
-xbanish -i mod1 &
+xbanish -i shift &
 
 # picom
 compon &
