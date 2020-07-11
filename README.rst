@@ -8,6 +8,7 @@ personal dotfiles/configuration files
 structure
 ---------
 ::
+
 	~/                              # ahh, there's no place like $HOME
 	~/bin/                          # personal scripts: https://github.com/e-zk/bin
 	~/etc/                          # various configuration files, also set as XDG_CONFIG_HOME
@@ -18,6 +19,7 @@ structure
 programs
 --------
 ::
+
 	terminal                        # xterm
 	shell                           # ksh
 	editor                          # vis
