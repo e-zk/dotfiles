@@ -4,20 +4,26 @@
 fontname "gohufont:size=13"
 
 # colors
-color menubg "#ffffff"
-color font "#000000"
-color menufg "#eaedef"
-color selfont "#1f1f1f"
-color activeborder "#5f5f5f"
-color inactiveborder "#4f4f4f"
+
+# light
+#color menubg "#ffffff"
+#color font "#000000"
+#color menufg "#eaedef"
+#color selfont "#1f1f1f"
+
+# dark
+color menubg "#0a0e0e"
+color font "#cececf"
+color menufg "#181f1e"
+color selfont "#cececf"
 
 # border
 borderwidth 0
+color activeborder "#181F1E"
+color inactiveborder "#181F1E"
 
 # gaps
-#gap 70 20 20 20
 gap 40 80 40 40
-
 
 # snapping
 snapdist 5
@@ -26,7 +32,8 @@ snapdist 5
 ignore sxiv
 
 # application menu
-command term "xterm -g 80x20"
+#command term "xterm -g 80x20"
+command term "urxvt -g 80x20"
 command lock "xlock -mode blank +description"
 command "top " "xterm -g 80x24 -e top"
 command "firefox " "firefox"
@@ -37,9 +44,11 @@ command "colorpick  " colorsel
 #command  qbittorrent  " qbittorrent
 command "xmag" xmag
 command "zathura " zathura
+command "shot" "shot"
 
 # auto groups
 autogroup 1 "xterm", "XTerm"
+autogroup 1 "urxvt", "URxvt"
 autogroup 2 "Navigator", "Firefox"
 autogroup 3 "org.pwmt.zathura", "Zathura"
 autogroup 4 "Xephyr", "Xephyr"
@@ -48,24 +57,24 @@ autogroup 5 "nowplaying", "mpv"
 # keys 
 unbind-key M-Left
 unbind-key M-Right
-bind-key 4-Up pointer-move-up-big
-bind-key 4-Down pointer-move-down-big
-bind-key 4-Left pointer-move-left-big
-bind-key 4-Right pointer-move-left-big
+
+bind-key 4S-Up pointer-move-up-big
+bind-key 4S-Down pointer-move-down-big
+bind-key 4S-Left pointer-move-left-big
+bind-key 4S-Right pointer-move-left-big
 
 bind-key 4-l lock
 
-#bind-key MS-g "center.sh md"
+bind-key MS-g "center.sh md"
 bind-key MS-t window-snap-up-left
 bind-key MS-y window-snap-up-right
 bind-key MS-v window-snap-down-left
 bind-key MS-b window-snap-down-right
 
-bind-key M-p "power"
-
+#bind-key M-p "power"
 #bind-key XF86AudioLowerVolume "soundbar"
 #bind-key XF86AudioRaiseVolume "soundbar"
-bind-key XF86AudioMute "mute"
+#bind-key XF86AudioMute "mute"
 
 # wms
 wm fvwm2 /usr/X11R6/bin/fvwm
