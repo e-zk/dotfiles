@@ -15,7 +15,6 @@ export XDG_CACHE_HOME=$HOME/var
 export PYTHONSTARTUP=$ETC/pythonrc.py
 
 # alias
-alias irssi='irssi --home=$ETC/irssi'
 alias ftop='top -C -g'
 alias vise='TERM=xterm-256color vise'
 alias todo='vim $HOME/usr/txt/todo.txt'
@@ -29,6 +28,7 @@ alias yt='mpv --profile youtube'
 # usage: bounce <if>
 bounce() {
 	doas ifconfig $1 down
+	sleep 1
 	doas ifconfig $1 up
 }
 
@@ -36,5 +36,7 @@ bounce() {
 # usage: deps <pkgname>
 deps() {
 	PKGNAME="$1"
-	pkg_info -f $PKGNAME | grep '^@depend' | cut -d ':' -f 3
+	INFO="$(pkg_info -f "$PKGNAME")"
+	echo "$INFO" | grep '^@depend' | cut -d ':' -f 3
+	echo "$INFO" | grep '^@wantlib' | cut -d ' ' -f 2
 }
