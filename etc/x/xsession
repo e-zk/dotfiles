@@ -21,7 +21,8 @@ PATH=${PATH}:${HOME}/bin
 #xsetroot -solid \#A3B7C1 &
 #solidwall \#A3B7C1 &
 #[ -f "/home/zzz/etc/wallpaper.jpg" ] && xwallpaper --zoom /home/zzz/etc/wallpaper.jpg || solidwall \#eaedef
-solidwall \#9aaaaf
+#solidwall \#9aaaaf
+solidwall \#121818
 
 # bars
 #barreload &

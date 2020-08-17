@@ -3,8 +3,9 @@
 
 ! Xft stuff
 Xft.dpi: 96
-Xft.antialias: 1
-Xft.hintstyle: hintfull
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
@@ -13,5 +14,6 @@ Xft.rgba: rgb
 #include "res/askpass"
 #include "res/sxiv"
 #include "res/xterm"
+#include "res/urxvt"
 #include "res/xlock"
 #include "../colorscheme"
