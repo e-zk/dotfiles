@@ -13,6 +13,13 @@ export MBOX=${HOME}/tmp/mbox
 export XDG_CONFIG_HOME=$ETC
 export XDG_CACHE_HOME=$HOME/var
 export PYTHONSTARTUP=$ETC/pythonrc.py
+export PKG_PATH=https://mirror.fsmg.org.nz/pub/OpenBSD/snapshots/packages/amd64
+
+PATH="/home/zzz/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/zzz/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/zzz/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/zzz/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/zzz/perl5"; export PERL_MM_OPT;
 
 # alias
 alias ftop='top -C -g'

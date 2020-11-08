@@ -1,7 +1,7 @@
 # cwmrc
 
 # fonts
-fontname "gohufont:size=13"
+fontname "Cozette:pixelsize=16:style=Medium"
 
 # colors
 
@@ -12,10 +12,10 @@ fontname "gohufont:size=13"
 #color selfont "#1f1f1f"
 
 # dark
-color menubg "#0a0e0e"
-color font "#cececf"
-color menufg "#181f1e"
-color selfont "#cececf"
+color menubg "#1d1f1f"
+color font "#aaafaf"
+color menufg "#202626"
+color selfont "#aaafaf"
 
 # border
 borderwidth 0
@@ -61,15 +61,15 @@ unbind-key M-Right
 bind-key 4S-Up pointer-move-up-big
 bind-key 4S-Down pointer-move-down-big
 bind-key 4S-Left pointer-move-left-big
-bind-key 4S-Right pointer-move-left-big
+bind-key 4S-Right pointer-move-right-big
 
 bind-key 4-l lock
 
 bind-key MS-g "center.sh md"
 bind-key MS-t window-snap-up-left
 bind-key MS-y window-snap-up-right
-bind-key MS-v window-snap-down-left
-bind-key MS-b window-snap-down-right
+bind-key MS-b window-snap-down-left
+bind-key MS-n window-snap-down-right
 
 #bind-key M-p "power"
 #bind-key XF86AudioLowerVolume "soundbar"
@@ -78,3 +78,4 @@ bind-key MS-b window-snap-down-right
 
 # wms
 wm fvwm2 /usr/X11R6/bin/fvwm
+wm progman /usr/local/bin/progman

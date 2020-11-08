@@ -39,7 +39,7 @@ xsetroot -cursor_name X_cursor &
 xbanish -i shift &
 
 # picom
-compon &
+#picom --config ${HOME}/etc/picom &
 
 # wm
 exec cwm -c ${HOME}/etc/cwmrc
