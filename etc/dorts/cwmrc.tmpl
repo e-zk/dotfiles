@@ -1,0 +1,66 @@
+# cwmrc
+
+# fonts
+fontname "{{ .xftFont }}"
+
+# colors
+color menubg  "{{ XrdbValue `\*\.background` }}"
+color font    "{{ XrdbValue `\*\.foreground` }}"
+color menufg  "{{ XrdbValue `\*\.color0` }}"
+color selfont "{{ XrdbValue `\*\.foreground` }}"
+
+# border
+borderwidth 0
+color activeborder   "{{ XrdbValue `\*\.color0` }}"
+color inactiveborder "{{ XrdbValue `\*\.color0` }}"
+
+# gaps
+gap 80 80 40 40
+
+# snapping
+snapdist 5
+
+# ignores
+ignore sxiv
+
+# application menu
+command term              "urxvt -g 80x20"
+command lock              "xlock -mode blank +description"
+command "top"             "urxvt -g 80x24 -e top"
+command "firefox"         "firefox"
+command " firefox (uni) " "firefox -P Uni"
+command " firefox (dev) " "firefox -P development"
+command " firefox (tmp) " "tmpfox" 
+command "colorpick"       "colorsel"
+command "xmag"            "xmag"
+command "zathura"         "zathura"
+command "shot"            "shot"
+
+# auto groups
+autogroup 1 "xterm",            "XTerm"
+autogroup 1 "urxvt",            "URxvt"
+autogroup 2 "Navigator",        "Firefox"
+autogroup 3 "org.pwmt.zathura", "Zathura"
+autogroup 4 "Xephyr",           "Xephyr"
+autogroup 5 "nowplaying",       "mpv"
+
+# keys 
+unbind-key M-Left
+unbind-key M-Right
+
+bind-key 4-l lock
+
+bind-key 4S-Up    pointer-move-up-big
+bind-key 4S-Down  pointer-move-down-big
+bind-key 4S-Left  pointer-move-left-big
+bind-key 4S-Right pointer-move-right-big
+
+bind-key MS-g "center.sh md"
+bind-key MS-t window-snap-up-left
+bind-key MS-y window-snap-up-right
+bind-key MS-b window-snap-down-left
+bind-key MS-n window-snap-down-right
+
+# wms
+wm fvwm2   /usr/X11R6/bin/fvwm
+wm progman /usr/local/bin/progman

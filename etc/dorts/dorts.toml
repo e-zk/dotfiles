@@ -1,0 +1,9 @@
+[common]
+xftFont = "Cozette:style=Medium:pixelsize=16"
+
+[cwmrc]
+path = "~/etc/cwmrc"
+
+[bar]
+path = "~/etc/bar.conf"
+accent = "#ffffff"
