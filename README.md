@@ -5,7 +5,6 @@
 ## info
 
 * *terminal*: urxvt
-* *shell*: ksh
+* *shell*: [m]ksh
 * *bar*: lemonbar-xft
 * *wm*: cwm
-* *notif*: custom scripts
