@@ -2,34 +2,39 @@
 # kshrc for openbsd systems
 
 # variables
-export GOPATH="$HOME/usr/go"
 export PATH="$PATH:$HOME/bin/vid:$HOME/bin/img:$HOME/bin/uni:$GOPATH/bin"
 export WALLPATH="$HOME/usr/img/walls"
 export VISUAL=vise
 export EDITOR=${VISUAL:-vi}
-export MAILRC=$ETC/mailrc
+export MAILRC=${ETC}/mailrc
 export MBOX=${HOME}/tmp/mbox
 # frig off, xdg
 export XDG_CONFIG_HOME=$ETC
-export XDG_CACHE_HOME=$HOME/var
-export PYTHONSTARTUP=$ETC/pythonrc.py
+export XDG_CACHE_HOME=${HOME}/var
 export PKG_PATH=https://mirror.fsmg.org.nz/pub/OpenBSD/snapshots/packages/amd64
 
-PATH="/home/zzz/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/zzz/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/zzz/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/zzz/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/zzz/perl5"; export PERL_MM_OPT;
+# language stuff
+export PYTHONSTARTUP=$ETC/pythonrc.py
+export GOPATH=${HOME}/usr/go
+export CABAL_DIR=${ETC}/cabal
+
+#PATH="/home/zzz/perl5/bin${PATH:+:${PATH}}"; export PATH;
+#PERL5LIB="/home/zzz/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+#PERL_LOCAL_LIB_ROOT="/home/zzz/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+#PERL_MB_OPT="--install_base \"/home/zzz/perl5\""; export PERL_MB_OPT;
+#PERL_MM_OPT="INSTALL_BASE=/home/zzz/perl5"; export PERL_MM_OPT;
+
 
 # alias
+#alias upload='doas teensyloader --mcu=atmega32u4 -v -w'
 alias ftop='top -C -g'
 alias vise='TERM=xterm-256color vise'
 alias todo='vim $HOME/usr/txt/todo.txt'
 alias img='ls -t | sxiv -iog 320x320'
 alias imgurl='mpv --pause'
-#alias upload='doas teensyloader --mcu=atmega32u4 -v -w'
 alias xreload='xrdb -merge ~/etc/x/xresources'
 alias yt='mpv --profile youtube'
+alias newt='urxvt'
 
 # bounce an interface
 # usage: bounce <if>

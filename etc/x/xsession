@@ -8,38 +8,21 @@ if [ -f ${HOME}/.Xdefaults ]; then
 	xrdb -merge ${HOME}/.Xdefaults
 fi
 
-# dbus
-#if [ -x /usr/local/bin/dbus-launch -a -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
-#	eval `dbus-launch --sh-syntax --exit-with-x11`
-#fi
-
 # LANG & PATH
 export LANG=en_AU.UTF-8
 PATH=${PATH}:${HOME}/bin
 
 # wallpaper
-#xsetroot -solid \#A3B7C1 &
-#solidwall \#A3B7C1 &
-#[ -f "/home/zzz/etc/wallpaper.jpg" ] && xwallpaper --zoom /home/zzz/etc/wallpaper.jpg || solidwall \#eaedef
-#solidwall \#9aaaaf
-solidwall \#121818
+solidwall \#aaafaf
 
 # bars
-#barreload &
 status | bar &
-
-# notifications
-rm -f ${HOME}/var/notified.pid &
-notified &
-
-# cursor
-xsetroot -cursor_name X_cursor &
 
 # xbanish
 xbanish -i shift &
 
-# picom
-#picom --config ${HOME}/etc/picom &
+# cursor
+xsetroot -cursor_name X_cursor &
 
 # wm
 exec cwm -c ${HOME}/etc/cwmrc

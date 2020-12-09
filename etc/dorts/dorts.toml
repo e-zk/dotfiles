@@ -6,4 +6,4 @@ path = "~/etc/cwmrc"
 
 [bar]
 path = "~/etc/bar.conf"
-accent = "#ffffff"
+accent = "#000000"
