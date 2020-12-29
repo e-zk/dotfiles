@@ -1,7 +1,6 @@
-window {
+/*window {
 	font-family: "Dina", "gohufont", monospace !important;
 }
-
 * {
 	box-sizing: border-box !important;
 	border-color: transparent !important;
@@ -79,7 +78,6 @@ window {
 }
 
 #TabsToolbar {
-	/*background-color: var(--light-bg) !important;*/
 	background-color: var(--main-bg) !important;
 	padding: 0px;
 	margin: 0px;
@@ -138,4 +136,4 @@ tab .tab-icon,
 }
 .close-icon:hover {
 	opacity: 1;
-}
+}*/
