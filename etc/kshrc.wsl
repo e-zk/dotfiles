@@ -6,8 +6,8 @@ export EDITOR=${VISUAL:-vi}
 
 # alias
 alias vim=vis
-alias 230='cd "$WHOME/_Uni/CAB230"'
-alias docs='cd "$WHOME/Documents"'
+alias 230='cd "${WHOME}/_Uni/CAB230"'
+alias docs='cd "${WHOME}/Documents"'
 
 # make new react app
 mkreact() {
