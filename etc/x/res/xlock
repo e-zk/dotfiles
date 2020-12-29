@@ -1,13 +1,13 @@
 ! xlock
-XLock.dpmsoff:  1
-XLock.description:  on
+XLock.dpmsoff:      1
+XLock.description:  off
 XLock.echokeys:     on
 XLock.showfps:      off
 XLock.foreground:   #FFFFFF
 XLock.background:   #000000
-XLock.info:         UNAUTHORISED ACCESS IS PROHIBITED
-XLock.username:     User:
-XLock.password:     Passwd:
+XLock.info:         
+XLock.username:     user:
+XLock.password:     passwd:
 XLock.icongeometry: 96x96
 XLock.font:         -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
 XLock.planfont:     -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
