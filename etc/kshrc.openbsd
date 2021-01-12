@@ -12,7 +12,6 @@ export MBOX=${HOME}/tmp/mbox
 # frig off, xdg
 export XDG_CONFIG_HOME=${ETC}
 export XDG_CACHE_HOME=${HOME}/var
-export PKG_PATH=https://mirror.fsmg.org.nz/pub/OpenBSD/snapshots/packages/amd64
 
 # language stuff
 export PYTHONSTARTUP=${ETC}/pythonrc.py
@@ -20,16 +19,20 @@ export GOPATH=${HOME}/usr/go
 export CABAL_DIR=${ETC}/cabal
 
 # alias
-#alias upload='doas teensyloader --mcu=atmega32u4 -v -w'
+alias aspell='aspell --home-dir=${ETC}/aspell'
 alias ftop='top -C -g'
-alias vise='TERM=xterm-256color vise'
-alias todo='vim $HOME/usr/txt/todo.txt'
 alias img='ls -t | sxiv -iog 320x320'
 alias imgurl='mpv --pause'
-alias xreload='xrdb -merge ~/etc/x/xresources'
-alias yt='mpv --profile youtube'
 alias newt='urxvt'
-alias aspell="aspell --home-dir=${ETC}/aspell"
+alias netstart='doas sh /etc/netstart'
+alias todo='${EDITOR} ~/usr/txt/todo.txt'
+alias vise='TERM=xterm-256color vise'
+alias xreload='xrdb -merge ~/etc/x/xresources'
+
+# autocomplete
+set -A complete_rcctl -- get getdef set check reload restart stop start disable enable order ls
+set -A complete_netstart -- $(ifconfig | grep ^[a-z] | cut -d: -f1)
+set -A complete_bounce -- $(ifconfig | grep ^[a-z] | cut -d: -f1)
 
 # bounce an interface
 # usage: bounce <if>
@@ -46,4 +49,12 @@ deps() {
 	INFO="$(pkg_info -f "$PKGNAME")"
 	echo "$INFO" | grep '^@depend' | cut -d ':' -f 3
 	echo "$INFO" | grep '^@wantlib' | cut -d ' ' -f 2
+}
+
+# arm/disarm usbkill
+arm() {
+	touch /tmp/arm_usbkill && printf 'armed\n' || printf 'error arming\n'
+}
+disarm() {
+	/bin/rm -f /tmp/arm_usbkill && printf 'disarmed\n' || printf 'error disarming\n'
 }
