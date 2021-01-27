@@ -1,6 +1,7 @@
 # variables
 export WHOME="/mnt/c/Users/ZZZ"
-export PATH="$PATH:$HOME/bin"
+export GOPATH="${HOME}/go"
+export PATH="${GOPATH}/bin:$PATH"
 export VISUAL=vis
 export EDITOR=${VISUAL:-vi}
 
@@ -8,6 +9,7 @@ export EDITOR=${VISUAL:-vi}
 alias vim=vis
 alias 230='cd "${WHOME}/_Uni/CAB230"'
 alias docs='cd "${WHOME}/Documents"'
+alias ls='ls -F --color=auto'
 
 # make new react app
 mkreact() {
@@ -18,3 +20,6 @@ mkreact() {
 	
 	npx create-react-app $@
 }
+
+# cd to $HOME by default (fuck wsl)
+cd "$HOME"
