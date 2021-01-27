@@ -34,7 +34,9 @@ _prompt() {
 export PS1='$(_prompt) '
 
 # variables
-export VIS_PATH="$HOME/etc/vis"
+export ETC=${HOME}/etc
+export XDG_CONFIG_HOME=${ETC}
+export XDG_CACHE_HOME=${HOME}/var
 
 # shortenings
 alias f='finger'
