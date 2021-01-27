@@ -6,7 +6,7 @@ XLock.showfps:      off
 XLock.foreground:   #FFFFFF
 XLock.background:   #000000
 XLock.info:         
-XLock.username:     user:
+XLock.username:     user:\040
 XLock.password:     passwd:
 XLock.icongeometry: 96x96
 XLock.font:         -*-fixed-medium-r-*-*-18-*-*-*-*-*-*
