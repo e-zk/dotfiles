@@ -1,9 +1,9 @@
 ! ssh-askpass
-ssh-askpass*font:      -*-fixed-medium-r-*-*-18-*-*-*-*-*-*-*
-ssh-askpass*fixedFont: -*-fixed-medium-r-*-*-18-*-*-*-*-*-*-*
-ssh-askpass.foreground: #f0faff
+ssh-askpass*font:      -*-fixed-medium-r-*-*-15-*-*-*-*-*-*-*
+ssh-askpass*fixedFont: -*-fixed-medium-r-*-*-15-*-*-*-*-*-*-*
+ssh-askpass.foreground: #eeeeee
 ssh-askpass.background: #000000
-ssh-askpass*foreground: #f0faff
+ssh-askpass*foreground: #eeeeee
 ssh-askpass*background: #000000
 
 ssh-askpass.*.shadowThickness: 0
@@ -12,12 +12,12 @@ ssh-askpass.verticalSpacing: 10
 ssh-askpass.horizontalSpacing: 10
 
 ssh-askpass.*Button.borderWidth: 2
-ssh-askpass.*Button.borderColor: #1a1f1f
-ssh-askpass.*Button.background: #1a1f1f
+ssh-askpass.*Button.borderColor: #101415
+ssh-askpass.*Button.background: #101415
 
 ssh-askpass.indicator.borderWidth: 2
 ssh-askpass.indicator.borderColor: #000000
-ssh-askpass.indicator.background: #303a3f
-ssh-askpass.indicator.foreground: #44aa66
+ssh-askpass.indicator.background: #101415
+ssh-askpass.indicator.foreground: #b00035
 ssh-askpass.indicator.minimumCount: 8
 ssh-askpass.indicator.maximumCount: 16
