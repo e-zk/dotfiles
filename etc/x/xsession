@@ -13,9 +13,9 @@ export LANG=en_AU.UTF-8
 PATH=${PATH}:${HOME}/bin
 
 # wallpaper
-solidwall \#aaafaf
+xsetroot -solid \#babebf
 
-# bars
+# bar
 status | bar &
 
 # xbanish
