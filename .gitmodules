@@ -1,0 +1,9 @@
+[submodule "etc/vis/themes"]
+	path = etc/vis/themes
+	url = ssh://git@github.com/e-zk/vis-themes
+[submodule "etc/vis/plugins/vis-go"]
+	path = etc/vis/plugins/vis-go
+	url = https://gitlab.com/timoha/vis-go
+[submodule "etc/vis/plugins/vis-shebang"]
+	path = etc/vis/plugins/vis-shebang
+	url = ssh://git@github.com/e-zk/vis-shebang
