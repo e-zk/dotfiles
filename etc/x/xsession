@@ -10,10 +10,10 @@ fi
 
 # LANG & PATH
 export LANG=en_AU.UTF-8
-PATH=${PATH}:${HOME}/bin
+PATH="${HOME}/bin:${HOME}/bin/bsd:${HOME}/bin/sym:${PATH}"
 
 # wallpaper
-xsetroot -solid \#babebf
+xsetroot -solid \#edeeef
 
 # bar
 status | bar &

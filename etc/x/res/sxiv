@@ -4,6 +4,6 @@
 !Sxiv*foreground: #ffffff
 !Sxiv*background: #cececf
 !Sxiv*foreground: #0a0f0f
-Sxiv*height: 12
-Sxiv*width: 12
+Sxiv.hpad: 12
+Sxiv.vpad: 12
 Sxiv*font:       gohufont:size=11
