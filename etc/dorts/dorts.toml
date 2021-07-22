@@ -7,3 +7,7 @@ path = "~/etc/cwmrc"
 [bar]
 path = "~/etc/bar.conf"
 accent = "#000000"
+background = "#FFFFFF"
+foreground = "#1B1B1B"
+border = "#E9E9E9"
+border_width = 0

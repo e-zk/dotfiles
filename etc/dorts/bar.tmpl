@@ -1,18 +1,11 @@
 # font (xft format)
 font="{{ .xftFont }}"
 
-
 # spacing
 space="  "
 
-
-# separator
-sep="///"
-
-
 # on the bottom?
 bottom=no
-
 
 # bar dimensions
 height=40
@@ -20,27 +13,12 @@ width=1920
 xpos=0
 ypos=0
 
-
 # colors
-background="{{ XrdbValue `\*\.background` }}"
-foreground="{{ XrdbValue `\*\.foreground` }}"
+background="{{ .background }"
+foreground="{{ .foreground }"
 accent="{{ .accent }}"
 
-clock_fg=$foreground
-title_fg=$foreground
-bat_fg=$foreground
-date_fg=$foreground
-
-clock_bg=$accent
-title_bg=$background
-bat_bg=$background
-date_bg=$background
-
 # border
-borderw=0
-border=\#181F1E
-
-
-# lock
-lock_cmd='xlock -mode blank'
+borderw={{ .border_width }}
+border={{ .border }}
 

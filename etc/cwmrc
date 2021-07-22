@@ -15,7 +15,7 @@ color activeborder   "#3f3f3f"
 color inactiveborder "#2f2f2f"
 
 # gaps
-gap 10 50 10 10
+gap 50 10 10 10
 
 # snapping
 snapdist 5
