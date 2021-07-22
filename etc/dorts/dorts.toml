@@ -10,4 +10,4 @@ accent = "#000000"
 background = "#FFFFFF"
 foreground = "#1B1B1B"
 border = "#E9E9E9"
-border_width = 0
+border_width = "0"
