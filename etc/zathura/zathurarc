@@ -1,4 +1,4 @@
-set font "Fira Mono normal 11"
+set font "monospace normal 11"
 
 set statusbar-bg \#0A0F0F
 set statusbar-fg \#CECECE
