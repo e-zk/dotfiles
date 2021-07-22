@@ -5,17 +5,17 @@ fontname "Cozette:style=Medium:pixelsize=16"
 
 # colors
 color menubg  "#000000"
-color font    "#b7c5d3"
-color menufg  "#1d252c"
-color selfont "#b7c5d3"
+color font    "#f9f9f9"
+color menufg  "#2f2f2f"
+color selfont "#f9f9f9"
 
 # border
-borderwidth 0
-color activeborder   "#232f3a"
-color inactiveborder "#1d252c"
+borderwidth 1
+color activeborder   "#3f3f3f"
+color inactiveborder "#2f2f2f"
 
 # gaps
-gap 60 20 20 20
+gap 10 50 10 10
 
 # snapping
 snapdist 5
