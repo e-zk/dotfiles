@@ -10,7 +10,7 @@ color menufg  "#2f2f2f"
 color selfont "#f9f9f9"
 
 # border
-borderwidth 1
+borderwidth 0
 color activeborder   "#3f3f3f"
 color inactiveborder "#2f2f2f"
 

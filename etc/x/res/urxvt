@@ -1,11 +1,12 @@
 URxvt.loginShell: true
 
-!URxvt.font: xft:Inconsolata:size=13:antialias=true
+URxvt.font:     xft:Noto Sans Mono:size=11:antialias=true
+URxvt.boldFont: xft:Noto Sans Mono:size=11:antialias=true
 !URxvt.font: xft:gohufont:pixelsize=16:antialias=false
 !URxvt.boldFont: xft:gohufont:pixelsize=16:antialias=false:style=Bold
 
-URxvt.font: xft:Cozette:style=Medium:pixelsize=16:antialias=false
-URxvt.boldFont: xft:Cozette:style=Medium:pixelsize=16:antialias=false
+!URxvt.font: xft:Cozette:style=Medium:pixelsize=16:antialias=false
+!URxvt.boldFont: xft:Cozette:style=Medium:pixelsize=16:antialias=false
 
 URxvt.internalBorder: 24
 URxvt.scrollBar: false
