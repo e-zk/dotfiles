@@ -1,4 +1,6 @@
 # cwmrc
+# / | | /|\ |_\ /
+# \ \|/ | | | \ \
 
 # fonts
 fontname "{{ .xftFont }}"
@@ -10,47 +12,52 @@ color menufg  "{{ XrdbValue `\*\.color0` }}"
 color selfont "{{ XrdbValue `\*\.foreground` }}"
 
 # border
-borderwidth 1
-color activeborder   "{{ XrdbValue `\*\.color8` }}"
-color inactiveborder "{{ XrdbValue `\*\.color0` }}"
+borderwidth 0
+color activeborder   "{{ XrdbValue `\*\.foreground` }}"
+color inactiveborder "{{ XrdbValue `\*\.foreground` }}"
 
 # gaps
-gap 50 10 10 10
+gap 10 10 10 10
 
 # snapping
 snapdist 5
 
 # ignores
 ignore sxiv
+ignore n30f
 
 # application menu
-command term              "urxvt -g 80x20"
-command lock              "xlock -mode blank +description"
-command " top"             "urxvt -g 80x24 -e top"
-command " firefox"         "firefox"
-command "  firefox (uni) " "firefox -P Uni"
-command "  firefox (dev) " "firefox -P development"
-command "  firefox (tmp) " "tmpfox"
-command " discord"         "discord"
-command " chrome"          "chrome"
-command "  chrome (tmp)"   "tmpchrome"
-command " colorpick"       "colorsel"
-command " xmag"            "xmag"
-command " zathura"         "zathura"
-command " shot"            "shot"
+command term			"urxvt -g 80x20"
+command lock			"xlock -mode blank +description"
+command " top"			"urxvt -g 80x24 -e top"
+command " firefox"		"firefox"
+command "  firefox (uni) "	"firefox -P Uni"
+command "  firefox (tmp) "	"tmpfox"
+command " discord"		"www_discord"
+command " chrome"		"chrome"
+command "  chrome (dev)"	"www_gh"
+command "  chrome (shopping)"	"www_shopping"
+command "  chrome (tmp)"	"tmpchrome"
+command " bitwarden"		"www_bitwarden"
+command " colorpick"		"colorsel"
+command " xmag"			"xmag"
+command " zathura"		"zathura"
+command " shot"			"shot"
 
 # auto groups
-autogroup 1 "xterm",            "XTerm"
-autogroup 1 "urxvt",            "URxvt"
-autogroup 2 "Navigator",        "Firefox"
-autogroup 2 "chromium-browser", "Chromium-browser"
-autogroup 3 "org.pwmt.zathura", "Zathura"
-autogroup 4 "Xephyr",           "Xephyr"
-autogroup 5 "nowplaying",       "mpv"
+autogroup 1 "xterm",		"XTerm"
+autogroup 1 "urxvt",		"URxvt"
+autogroup 2 "Navigator",	"Firefox"
+autogroup 2 "chromium-browser",	"Chromium-browser"
+autogroup 3 "org.pwmt.zathura",	"Zathura"
+autogroup 4 "Xephyr",		"Xephyr"
+autogroup 5 "nowplaying",	"mpv"
 
 # keys 
 unbind-key M-Left
 unbind-key M-Right
+
+bind-key 4S-s "shot -s"
 
 bind-key 4-l lock
 
@@ -64,6 +71,12 @@ bind-key MS-t window-snap-up-left
 bind-key MS-y window-snap-up-right
 bind-key MS-b window-snap-down-left
 bind-key MS-n window-snap-down-right
+
+bind-key XF86AudioLowerVolume "vol"
+bind-key XF86AudioRaiseVolume "vol"
+
+bind-key 4-b "bats"
+bind-key 4-c "clock"
 
 # wms
 wm fvwm2   /usr/X11R6/bin/fvwm

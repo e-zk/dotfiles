@@ -4,25 +4,42 @@
 # ~/.xsession : loaded on login by xenodm(1)
 
 # merge .Xdefaults
-if [ -f ${HOME}/.Xdefaults ]; then
-	xrdb -merge ${HOME}/.Xdefaults
+if [ -f ${HOME}/etc/x/xresources ]; then
+	xrdb -merge ${HOME}/etc/x/xresources
 fi
+
+# load ssh keys
+if [ -z "$SSH_AGENT_PID" ]; then
+	eval `ssh-agent -s`
+fi
+
+privkeys="$(find ~/.ssh -maxdepth 1 -name 'id*' -not -name '*.pub')" 
+for key in $privkeys; do 
+        ssh-add "$key"
+done
 
 # LANG & PATH
 export LANG=en_AU.UTF-8
 PATH="${HOME}/bin:${HOME}/bin/bsd:${HOME}/bin/sym:${PATH}"
 
-# wallpaper
-xsetroot -solid \#edeeef
+# wallpaper color
+if nite; then
+	solidwall \#181818 &
+else
+	solidwall \#a9aea9 &
+fi
 
 # bar
-status | bar &
+#status | bar &
 
 # xbanish
 xbanish -i shift &
 
 # cursor
 xsetroot -cursor_name X_cursor &
+
+# compositor
+#picom -b --config ${HOME}/etc/picom.conf
 
 # wm
 exec cwm -c ${HOME}/etc/cwmrc

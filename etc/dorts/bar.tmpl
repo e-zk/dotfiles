@@ -9,13 +9,15 @@ bottom=no
 
 # bar dimensions
 height=40
+#width=2540
 width=1920
 xpos=0
 ypos=0
+voff=0
 
 # colors
-background="{{ .background }}"
-foreground="{{ .foreground }}"
+background="{{ XrdbValue `\*\.background` }}"
+foreground="{{ XrdbValue `\*\.foreground` }}"
 accent="{{ .accent }}"
 
 # border

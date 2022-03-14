@@ -1,7 +1,9 @@
 URxvt.loginShell: true
 
-URxvt.font:     xft:Noto Sans Mono:size=11:antialias=true
-URxvt.boldFont: xft:Noto Sans Mono:size=11:antialias=true
+URxvt.font:     xft:JetBrains Mono:style=Regular:size=14:antialias=true
+URxvt.boldFont: xft:JetBrains Mono:style=Regular:size=14:antialias=true
+!URxvt.font:     xft:Noto Sans Mono:size=11:antialias=true
+!URxvt.boldFont: xft:Noto Sans Mono:size=11:antialias=true
 !URxvt.font: xft:gohufont:pixelsize=16:antialias=false
 !URxvt.boldFont: xft:gohufont:pixelsize=16:antialias=false:style=Bold
 

@@ -8,6 +8,7 @@ set -o vi
 
 # prompt
 _prompt() {
+
 	exit_code="$?"
 	ps1_color_off=${ps1_color_off:-0}
 
@@ -40,8 +41,10 @@ _prompt() {
 	fi
 
 	[ "$ps1_color_off" -eq 0 ] && printf '\033[0m'
+
 }
-export PS1='$(_prompt) '
+#export PS1='$(_prompt)'
+export PS1='$(~/usr/src/go/prompt/main)'
 
 # variables
 export ETC=${HOME}/etc

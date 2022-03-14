@@ -1,13 +1,14 @@
 [common]
-xftFont = "Cozette:style=Medium:pixelsize=16"
+xftFont = "JetBrains Mono:style=Regular:size=14"
 
 [cwmrc]
 path = "~/etc/cwmrc"
 
 [bar]
+#xftFont = "Inconsolata:style=Regular:antialiased=true"
 path = "~/etc/bar.conf"
-accent = "#000000"
-background = "#FFFFFF"
-foreground = "#1B1B1B"
+accent = "#ffffff"
+background = "#a9aea9"
+foreground = "#ffffff"
 border = "#E9E9E9"
 border_width = "0"
