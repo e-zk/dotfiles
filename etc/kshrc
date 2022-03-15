@@ -8,43 +8,17 @@ set -o vi
 
 # prompt
 _prompt() {
+	exit_code=$?
 
-	exit_code="$?"
-	ps1_color_off=${ps1_color_off:-0}
-
-	if [ "$ps1_color_off" -eq 0 ]; then
-		if [ "$(pwd)" != "$HOME" ]; then
-			printf '\033[38m%s' "$(basename "$(pwd)")"
-		else
-			printf '\033[0m'
-		fi
+	if [ "$PWD" = "$HOME" ]; then
+		dir="~"
 	else
-		if [ "$(pwd)" != "$HOME" ]; then
-			printf '%s' "$(basename "$(pwd)")"
-		fi
+		dir="$(basename $PWD)"
 	fi
-
-	# exit code
-	if [ "$ps1_color_off" -eq 0 ]; then
-		if [ "$exit_code" -eq "0" ]; then
-			printf '\033[90m'
-		else
-			printf '\033[31m'
-		fi
-	fi
-
-	# root ?
-	if [ $(id -u) -ne 0 ]; then
-		printf '$'
-	else
-		printf '#'
-	fi
-
-	[ "$ps1_color_off" -eq 0 ] && printf '\033[0m'
-
+	printf '%s' "$dir"
 }
-#export PS1='$(_prompt)'
-export PS1='$(~/usr/src/go/prompt/main)'
+#export PS1='$(_prompt) \$ '
+export PS1='$(~/usr/src/go/prompt/main) \$ '
 
 # variables
 export ETC=${HOME}/etc

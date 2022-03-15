@@ -2,7 +2,7 @@
 # kshrc for openbsd systems
 
 # variables
-export PATH="$HOME/bin/bsd:$HOME/bin/vid:$HOME/bin/img:$HOME/bin/uni:${GOPATH}/bin:${PATH}"
+export PATH="$HOME/bin/bsd:$HOME/bin/vid:$HOME/bin/img:$HOME/bin/uni:$HOME/usr/go/bin:${PATH}"
 export WALLPATH="$HOME/usr/img/walls"
 export VISUAL=vise
 export EDITOR=${VISUAL:-vi}
@@ -10,14 +10,7 @@ export MAILRC=${ETC}/mailrc
 export MBOX=${HOME}/tmp/mbox
 
 # chromium depot tools
-export PATH="${PATH}:${HOME}/usr/src/git/depot_tools"
-
-# add to ssh-agent
-#privkeys="$(find ~/.ssh -maxdepth 1 -name 'id*' -not -name '*.pub')"
-#for key in $privkeys; do
-#	ssh-add "$key"
-#done
-#unset privkeys
+#export PATH="${PATH}:${HOME}/usr/src/git/depot_tools"
 
 # frig off, xdg
 export XDG_CONFIG_HOME=${ETC}
