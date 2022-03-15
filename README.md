@@ -1,5 +1,5 @@
-dotfiles
-=========
+~
+==
 
 ![dotfiles](etc/scrot.png)
 
