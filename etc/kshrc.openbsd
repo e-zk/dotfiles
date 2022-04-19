@@ -12,6 +12,9 @@ export MBOX=${HOME}/tmp/mbox
 # chromium depot tools
 #export PATH="${PATH}:${HOME}/usr/src/git/depot_tools"
 
+# prompt 
+eval $(prompt -s) >/dev/null
+
 # frig off, xdg
 export XDG_CONFIG_HOME=${ETC}
 export XDG_CACHE_HOME=${HOME}/var

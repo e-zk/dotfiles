@@ -6,20 +6,6 @@
 # vi mode baby
 set -o vi
 
-# prompt
-_prompt() {
-	exit_code=$?
-
-	if [ "$PWD" = "$HOME" ]; then
-		dir="~"
-	else
-		dir="$(basename $PWD)"
-	fi
-	printf '%s' "$dir"
-}
-#export PS1='$(_prompt) \$ '
-export PS1='$(~/usr/src/go/prompt/main) \$ '
-
 # variables
 export ETC=${HOME}/etc
 export PATH="${HOME}/bin:${HOME}/bin/sym:${PATH}"
