@@ -1,0 +1,29 @@
+dotfiles
+=========
+
+heirachy:
+
+	~
+	|- cfg/             (XDG_CONFIG_HOME)
+	|  |- sh/           (shell configs)
+	|     |- rc.sh      (main rc)
+	|     |- linux.sh   (linux rc)
+	|     |- openbsd.sh (openbsd rc)
+	|     |- wsl.sh     (wsl rc)
+	|
+	|- src/
+	|  |- go -> ~/var/go/src/
+	|  |- [lang]
+	|
+	|- var/
+	|  |- cache/ (XDG_CACHE_HOME)
+	|  |- share/ (XDG_DATA_HOME)
+	|  |- lib/   (XDG_STATE_HOME)
+	|  |- run/   (XDG_RUNTIME_DIR)
+	|  |- go/    (GOPATH)
+	|
+	|- .ssh/
+	|  |- keys/ ?
+	|
+
+
