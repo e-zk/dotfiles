@@ -1,7 +1,7 @@
 dotfiles
 =========
 
-heirachy:
+(proposed) heirachy:
 
 	~
 	|- cfg/             (XDG_CONFIG_HOME)
@@ -22,8 +22,6 @@ heirachy:
 	|  |- run/   (XDG_RUNTIME_DIR)
 	|  |- go/    (GOPATH)
 	|
-	|- .ssh/
-	|  |- keys/ ?
-	|
-
+	|- .ssh/    (?)
+	|  |- keys/ (?)
 
