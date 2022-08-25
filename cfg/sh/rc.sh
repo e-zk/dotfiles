@@ -34,6 +34,9 @@ else
 	export PS1='\$ '
 fi
 
+# dots management alias
+alias dots='/usr/bin/git --git-dir=$HOME/var/dots/ --work-tree=$HOME'
+
 # shortenings
 alias f='finger'
 alias h='history -r | less'
@@ -59,6 +62,7 @@ if [ "$(id -u)" -ne "0" ]; then
 		;;
 		Linux)
 			. "$XDG_CONFIG_HOME/sh/linux.sh"
+			# load WSL2-specific settings
 			if uname -r | grep 'WSL2$'; then
 				. "$XDG_CONFIG_HOME/sh/wsl.sh"
 			fi
