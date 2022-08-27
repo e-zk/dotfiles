@@ -1,0 +1,21 @@
+[user]
+	email = e-zk@users.noreply.github.com
+	name = zak
+[init]
+	defaultBranch = trunk
+
+# SSH signing
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = "~/cfg/git/allowed_signers"
+
+# includes
+[include]
+	path = "alias"
+	path = "delta"
+	# 'local' config
+	# includes 'user.signingkey = /path/to/key.pub'
+	path = "local"
