@@ -39,6 +39,9 @@ else
 	export PS1='\$ '
 fi
 
+# reload rc
+alias runrc='. ~/cfg/sh/rc.sh'
+
 # dots management alias
 alias dots='/usr/bin/git --git-dir=$HOME/var/dots/ --work-tree=$HOME'
 
@@ -82,10 +85,9 @@ mkcd() {
 		return 1
 	fi
 
-	local path=\$$#
+	eval path=\${$#}
 
-	mkdir $@
-	cd "$path"
+	mkdir $@ && cd $path
 }
 
 # setup a tmux session for "development"
