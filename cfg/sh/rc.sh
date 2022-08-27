@@ -20,6 +20,11 @@ export GOBIN="${GOPATH}/bin"
 # path
 export PATH="${HOME}/bin:${HOME}/bin/sym:${PATH}:${GOBIN}"
 
+# editor
+vispath="$(command -v vis)"
+export EDITOR=${vispath:-vi}
+export VISUAL=${vispath:-vi}
+
 # use custom prompt command if availale
 if command -v prompt >/dev/null; then
 	# bash is special and need extra bs in the PS1
