@@ -68,7 +68,7 @@ if [ "$(id -u)" -ne "0" ]; then
 		Linux)
 			. "$XDG_CONFIG_HOME/sh/linux.sh"
 			# load WSL2-specific settings
-			if uname -r | grep 'WSL2$'; then
+			if uname -r | grep -q 'WSL2$'; then
 				. "$XDG_CONFIG_HOME/sh/wsl.sh"
 			fi
 		;;
