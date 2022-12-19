@@ -19,3 +19,6 @@
 	# 'local' config
 	# includes 'user.signingkey = /path/to/key.pub'
 	path = "local"
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
